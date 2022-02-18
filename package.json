@@ -1,0 +1,19 @@
+{
+  "name": "@astralfrontier/cards",
+  "version": "1.0.0",
+  "description": "Constellation Cards definitions, data, and components",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/constellation-cards/cards.git"
+  },
+  "author": "garrett@astralfrontier.org",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/constellation-cards/cards/issues"
+  },
+  "homepage": "https://github.com/constellation-cards/cards#readme"
+}
