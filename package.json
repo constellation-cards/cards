@@ -1,5 +1,5 @@
 {
-  "name": "@astralfrontier/cards",
+  "name": "@constellation-cards/cards",
   "version": "1.0.0",
   "description": "Constellation Cards definitions, data, and components",
   "main": "index.ts",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/constellation-cards/cards/issues"
   },
-  "homepage": "https://github.com/constellation-cards/cards#readme"
+  "homepage": "https://github.com/constellation-cards/cards#readme",
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
 }
