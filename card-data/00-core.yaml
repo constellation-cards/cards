@@ -1,265 +1,267 @@
-- template: &template
-    stack: Core Rules
-- template: &agendafront
-    stack: Core Rules (Agenda)
-- template: &crisis
-    stack: Core Rules (Crisis)
-- template: &agendaback
-    <<: *agendafront
-    desc: >
-      During play, you can speak from one of several agendas.
+templates:
+  - template: &template
+      stack: Core Rules
+  - template: &agendafront
+      stack: Core Rules (Agenda)
+  - template: &crisis
+      stack: Core Rules (Crisis)
+  - template: &agendaback
+      <<: *agendafront
+      desc: >
+        During play, you can speak from one of several agendas.
 
-      These agendas can be assigned individually to several people,
-      or all given to a single player ("the Game Master" or "the GM").
+        These agendas can be assigned individually to several people,
+        or all given to a single player ("the Game Master" or "the GM").
 
-      The agendas can change hands during the game.
-      You cannot take an agenda away from someone else,
-      but you can ask someone else to give up an agenda.
+        The agendas can change hands during the game.
+        You cannot take an agenda away from someone else,
+        but you can ask someone else to give up an agenda.
 
-      If you've been assigned a agenda, you are bound to speak from it.
-- template: &principal
-    <<: *agendafront
-    name: The Principal
-    rule: Whoever plays this card is a principal. Flip for additional rules.
-  front:
-    <<: *principal
-    desc: >
-      You get to create and play a Principal Character (PC),
-      one of the protagonists of the story.
+        If you've been assigned a agenda, you are bound to speak from it.
+cards:
+  - template: &principal
+      <<: *agendafront
+      name: The Principal
+      rule: Whoever plays this card is a principal. Flip for additional rules.
+    front:
+      <<: *principal
+      desc: >
+        You get to create and play a Principal Character (PC),
+        one of the protagonists of the story.
 
-      Your job is to narrate your character's actions and reactions.
-      Decide on their agendas, then enact them in interesting ways.
+        Your job is to narrate your character's actions and reactions.
+        Decide on their agendas, then enact them in interesting ways.
 
-      When someone asks "what does your character do, say, or think?",
-      you get to answer.
-    prompts:
-      - Stay true to your character
-      - Share ways for other players to help you have fun
-      - Look for opportunities to advance your story
-      - Support other players' stories
-  back:
-    <<: *agendaback
-    <<: *principal
-  qty: 6
-- template: &facilitator
-    <<: *agendafront
-    name: The Facilitator
-    rule: Whoever plays this card is the facilitator. Flip for additional rules.
-  front:
-    <<: *facilitator
-    desc: >
-      Players in the spotlight are the focus of narration.
-      We're asking them for an action that pushes the scene forward,
-      and shining the spotlight until they make one.
+        When someone asks "what does your character do, say, or think?",
+        you get to answer.
+      prompts:
+        - Stay true to your character
+        - Share ways for other players to help you have fun
+        - Look for opportunities to advance your story
+        - Support other players' stories
+    back:
+      <<: *agendaback
+      <<: *principal
+    qty: 6
+  - template: &facilitator
+      <<: *agendafront
+      name: The Facilitator
+      rule: Whoever plays this card is the facilitator. Flip for additional rules.
+    front:
+      <<: *facilitator
+      desc: >
+        Players in the spotlight are the focus of narration.
+        We're asking them for an action that pushes the scene forward,
+        and shining the spotlight until they make one.
 
-      Your job is to oversee moving the spotlight from player to player in fun and fair ways.
+        Your job is to oversee moving the spotlight from player to player in fun and fair ways.
 
-      Move the spotlight:
-    prompts:
-      - toward a PC who's placed at risk or in danger
-      - toward a player who hasn't acted recently
-      - toward a player who has an interesting idea for how to move things forward
-      - away from a player who just resolved a dramatic or decisive action
-      - away from a cliffhanger or moment of tension
-      - away from any player who's had it too long
-  back:
-    <<: *agendaback
-    <<: *facilitator
-- template: &lorekeeper
-    <<: *agendafront
-    name: The lorekeeper
-    rule: Whoever plays this card is the lorekeeper. Flip for additional rules.
-  front:
-    <<: *lorekeeper
-    desc: >
-      Your job is to establish the history, setting,
-      and canon of the world in which the game happens.
+        Move the spotlight:
+      prompts:
+        - toward a PC who's placed at risk or in danger
+        - toward a player who hasn't acted recently
+        - toward a player who has an interesting idea for how to move things forward
+        - away from a player who just resolved a dramatic or decisive action
+        - away from a cliffhanger or moment of tension
+        - away from any player who's had it too long
+    back:
+      <<: *agendaback
+      <<: *facilitator
+  - template: &lorekeeper
+      <<: *agendafront
+      name: The lorekeeper
+      rule: Whoever plays this card is the lorekeeper. Flip for additional rules.
+    front:
+      <<: *lorekeeper
+      desc: >
+        Your job is to establish the history, setting,
+        and canon of the world in which the game happens.
 
-      When someone asks, "what do our characters know about X?"
-      and it's not a question for an Ensemble Character (EC) to decide,
-      you get to answer.
+        When someone asks, "what do our characters know about X?"
+        and it's not a question for an Ensemble Character (EC) to decide,
+        you get to answer.
 
-      Any player can suggest an answer, but you have the final say on what's true.
-      If a specific PC's heritage, origin, or interests concern the question, consider deferring to them.
-    prompts:
-      - Who was the greatest Paladin in history?
-      - What languages might my character learn to speak?
-      - When did the dragons disappear?
-      - How does magic work, anyway?
-  back:
-    <<: *agendaback
-    <<: *lorekeeper
-- template: &referee
-    <<: *agendafront
-    name: The Referee
-    rule: Whoever plays this card is the referee. Flip for additional rules.
-  front:
-    <<: *referee
-    desc: >
-      Your job is to adjudicate questions about the rules of the game,
-      and to make changes to the rules with the group's consent.
-      Any player can suggest how to handle a rule, but you have the final say.
+        Any player can suggest an answer, but you have the final say on what's true.
+        If a specific PC's heritage, origin, or interests concern the question, consider deferring to them.
+      prompts:
+        - Who was the greatest Paladin in history?
+        - What languages might my character learn to speak?
+        - When did the dragons disappear?
+        - How does magic work, anyway?
+    back:
+      <<: *agendaback
+      <<: *lorekeeper
+  - template: &referee
+      <<: *agendafront
+      name: The Referee
+      rule: Whoever plays this card is the referee. Flip for additional rules.
+    front:
+      <<: *referee
+      desc: >
+        Your job is to adjudicate questions about the rules of the game,
+        and to make changes to the rules with the group's consent.
+        Any player can suggest how to handle a rule, but you have the final say.
 
-      Example rulings:
-    prompts:
-      - Is a given card applicable to this fictional situation?
-      - How should a given card's text be interpreted?
-      - Is it time to create a new card?
-  back:
-    <<: *agendaback
-    <<: *referee
-- template: &storyteller
-    <<: *agendafront
-    name: The Storyteller
-    rule: Whoever plays this card is the storyteller. Flip for additional rules.
-  front:
-    <<: *storyteller
-    desc: >
-      The Principal Characters (PCs) are the focus of the game.
-      The game also has Ensemble Characters (ECs),
-      sometimes called Non-Player Characters (NPCs).
+        Example rulings:
+      prompts:
+        - Is a given card applicable to this fictional situation?
+        - How should a given card's text be interpreted?
+        - Is it time to create a new card?
+    back:
+      <<: *agendaback
+      <<: *referee
+  - template: &storyteller
+      <<: *agendafront
+      name: The Storyteller
+      rule: Whoever plays this card is the storyteller. Flip for additional rules.
+    front:
+      <<: *storyteller
+      desc: >
+        The Principal Characters (PCs) are the focus of the game.
+        The game also has Ensemble Characters (ECs),
+        sometimes called Non-Player Characters (NPCs).
 
-      Your job is to narrate the ECs' actions and reactions.
-      Decide on their agendas, then enact them in interesting ways.
+        Your job is to narrate the ECs' actions and reactions.
+        Decide on their agendas, then enact them in interesting ways.
 
-      ECs are allies, antagonists, or anyone else involved
-      in the story but not at the heart of it.
-    prompts:
-      - Give ECs a name and identity
-      - Find the essential humanity of every EC
-      - Don't steal agency or spotlight from the PCs
-      - Initiate actions that prompt a PC response
-  back:
-    <<: *agendaback
-    <<: *storyteller
-- template: &challenges
-    <<: *template
-    name: Challenges
-    rule: Flip for additional rules.
-  front:
-    <<: *challenges
-    desc: >
-      Any player may challenge a PC's action if failure is likely
-      and success or failure are both interesting for the story.
+        ECs are allies, antagonists, or anyone else involved
+        in the story but not at the heart of it.
+      prompts:
+        - Give ECs a name and identity
+        - Find the essential humanity of every EC
+        - Don't steal agency or spotlight from the PCs
+        - Initiate actions that prompt a PC response
+    back:
+      <<: *agendaback
+      <<: *storyteller
+  - template: &challenges
+      <<: *template
+      name: Challenges
+      rule: Flip for additional rules.
+    front:
+      <<: *challenges
+      desc: >
+        Any player may challenge a PC's action if failure is likely
+        and success or failure are both interesting for the story.
 
-      When your PC is challenged,
-      you must generate a hit in order to succeed.
-      Other rules provide ways to generate hits.
+        When your PC is challenged,
+        you must generate a hit in order to succeed.
+        Other rules provide ways to generate hits.
 
-      If you fail to meet a challenge,
-      your PC's intentions are thwarted, or complications arise.
-      There's no challenge if this can't happen.
-    prompts:
-      - You're navigating rough terrain, and might fall or lose equipment
-      - You're fighting or fleeing a dangerous monster, and might get hurt
-      - You're working with complex magic or technology, and it might malfunction
-      - You're confronting an emotionally fraught situation where harm is possible
-  back:
-    <<: *challenges
-    desc: >
-      Challenges follow the principle of "say yes or roll the dice".
+        If you fail to meet a challenge,
+        your PC's intentions are thwarted, or complications arise.
+        There's no challenge if this can't happen.
+      prompts:
+        - You're navigating rough terrain, and might fall or lose equipment
+        - You're fighting or fleeing a dangerous monster, and might get hurt
+        - You're working with complex magic or technology, and it might malfunction
+        - You're confronting an emotionally fraught situation where harm is possible
+    back:
+      <<: *challenges
+      desc: >
+        Challenges follow the principle of "say yes or roll the dice".
 
-      Use challenges to increase or decrease the difficulty of a situation.
-      For example, a risky combat scene might pose several challenges in succession.
-      A simple social encounter might pose only one challenge.
+        Use challenges to increase or decrease the difficulty of a situation.
+        For example, a risky combat scene might pose several challenges in succession.
+        A simple social encounter might pose only one challenge.
 
-      The player posing the challenge should give an idea of what failure looks like.
-      That player, or the Storyteller, might narrate the specifics of failure.
+        The player posing the challenge should give an idea of what failure looks like.
+        That player, or the Storyteller, might narrate the specifics of failure.
 
-      The same action should not be challenged multiple times
-      unless there are both distinct and interesting ways for it to fail.
-      For example, a demonstration of new magic might go awry by itself,
-      but might also anger a jealous wizard who observes it.
-- front: &xcard
-    <<: *template
-    name: X-Card
-    img: x.png
-    desc: >
-      Start the game by reading this text aloud:
+        The same action should not be challenged multiple times
+        unless there are both distinct and interesting ways for it to fail.
+        For example, a demonstration of new magic might go awry by itself,
+        but might also anger a jealous wizard who observes it.
+  - front: &xcard
+      <<: *template
+      name: X-Card
+      img: x.png
+      desc: >
+        Start the game by reading this text aloud:
 
-      "I'd like your help. Your help to make this game fun for everyone.
-      If anything makes anyone uncomfortable in any way,
-      just lift this card up, or simply tap it. You don't have to explain why.
-      It doesn't matter why.
-      When we lift or tap this card, we simply edit out anything X-Carded."
+        "I'd like your help. Your help to make this game fun for everyone.
+        If anything makes anyone uncomfortable in any way,
+        just lift this card up, or simply tap it. You don't have to explain why.
+        It doesn't matter why.
+        When we lift or tap this card, we simply edit out anything X-Carded."
 
-      "And if there is ever an issue,
-      anyone can call for a break and we can talk privately.
-      I know it sounds funny but it will help us play amazing games together
-      and usually I'm the one who uses the X card to protect myself
-      from all of you! Please help make this game fun for everyone.
-      Thank you!"
-    rule: Lay this card at the center of the play area
-  back: *xcard
-- template: &uncertain
-    <<: *crisis
-    name: Uncertain Crisis
-    rule: Define the scope of the crisis, and flip this card
-  front:
-    <<: *uncertain
-    desc: >
-      Some situations cannot be solved by skill or virtue, but only good fortune.
+        "And if there is ever an issue,
+        anyone can call for a break and we can talk privately.
+        I know it sounds funny but it will help us play amazing games together
+        and usually I'm the one who uses the X card to protect myself
+        from all of you! Please help make this game fun for everyone.
+        Thank you!"
+      rule: Lay this card at the center of the play area
+    back: *xcard
+  - template: &uncertain
+      <<: *crisis
+      name: Uncertain Crisis
+      rule: Define the scope of the crisis, and flip this card
+    front:
+      <<: *uncertain
+      desc: >
+        Some situations cannot be solved by skill or virtue, but only good fortune.
 
-      When you encounter such a crisis, decide what it would take to escape it,
-      such as leaving the area successfully.
-    prompts:
-      - A chaotic natural disaster, such as flooding
-      - Navigating a complex and ever-shifting maze
-      - Entreating with capricious spirits or divinities
-  back:
-    <<: *uncertain
-    desc: >
-      You may not flip any cards in front of you (e.g. Character cards) to generate hits.
+        When you encounter such a crisis, decide what it would take to escape it,
+        such as leaving the area successfully.
+      prompts:
+        - A chaotic natural disaster, such as flooding
+        - Navigating a complex and ever-shifting maze
+        - Entreating with capricious spirits or divinities
+    back:
+      <<: *uncertain
+      desc: >
+        You may not flip any cards in front of you (e.g. Character cards) to generate hits.
 
-      You may flip shared cards (e.g. Plot cards)
-      or draw/pick a new card (e.g. Condition card, Random oracle card).
-    rule: Flip this card when the crisis is past
-- template: &gauntlet
-    <<: *crisis
-    name: Gauntlet Crisis
-    rule: Define the scope of the crisis, and flip this card
-  front:
-    <<: *gauntlet
-    desc: >
-      Some situations are grueling and exhausting, wearing down your reserves
-      faster than you can recover. Sooner or later, something has to give.
+        You may flip shared cards (e.g. Plot cards)
+        or draw/pick a new card (e.g. Condition card, Random oracle card).
+      rule: Flip this card when the crisis is past
+  - template: &gauntlet
+      <<: *crisis
+      name: Gauntlet Crisis
+      rule: Define the scope of the crisis, and flip this card
+    front:
+      <<: *gauntlet
+      desc: >
+        Some situations are grueling and exhausting, wearing down your reserves
+        faster than you can recover. Sooner or later, something has to give.
 
-      When you encounter such a crisis, decide what it would take to survive it,
-      such as escaping an enemy or saving a friend.
-    prompts:
-      - A furious and violent vehicle chase
-      - Survival in a hostile and dangerous environment
-      - An extended and grueling magical ritual
-  back:
-    <<: *gauntlet
-    desc: >
-      No card in front of you (e.g. Character cards)
-      may be flipped more than once to generate a hit.
+        When you encounter such a crisis, decide what it would take to survive it,
+        such as escaping an enemy or saving a friend.
+      prompts:
+        - A furious and violent vehicle chase
+        - Survival in a hostile and dangerous environment
+        - An extended and grueling magical ritual
+    back:
+      <<: *gauntlet
+      desc: >
+        No card in front of you (e.g. Character cards)
+        may be flipped more than once to generate a hit.
 
-      You may flip group cards (e.g. Plot cards)
-      or draw/pick a new card (e.g. Condition card, Random oracle card).
-    rule: Flip this card when the crisis is past
-- template: &overwhelming
-    <<: *crisis
-    name: Overwhelming Crisis
-    rule: Define the scope of the crisis, and flip this card
-  front:
-    <<: *overwhelming
-    desc: >
-      Some situations will upset a character's mental equilibrium,
-      or present a challenge so daunting that they aren't prepared to handle it immediately.
-      Ultimately, though, the characters may rally and prevail.
+        You may flip group cards (e.g. Plot cards)
+        or draw/pick a new card (e.g. Condition card, Random oracle card).
+      rule: Flip this card when the crisis is past
+  - template: &overwhelming
+      <<: *crisis
+      name: Overwhelming Crisis
+      rule: Define the scope of the crisis, and flip this card
+    front:
+      <<: *overwhelming
+      desc: >
+        Some situations will upset a character's mental equilibrium,
+        or present a challenge so daunting that they aren't prepared to handle it immediately.
+        Ultimately, though, the characters may rally and prevail.
 
-      When you encounter such a crisis, decide what it would take to survive it,
-      such as defeating an enemy or finding shelter.
-    prompts:
-      - Final boss fights
-      - Sudden teleportation to a new world
-      - Confrontation with divine forces
-  back:
-    <<: *overwhelming
-    desc: >
-      Immediately flip all Character cards in front of all players to their back side.
+        When you encounter such a crisis, decide what it would take to survive it,
+        such as defeating an enemy or finding shelter.
+      prompts:
+        - Final boss fights
+        - Sudden teleportation to a new world
+        - Confrontation with divine forces
+    back:
+      <<: *overwhelming
+      desc: >
+        Immediately flip all Character cards in front of all players to their back side.
 
-      Cards may be flipped back and used in the usual way from then on.
-    rule: Flip this card when the crisis is past
+        Cards may be flipped back and used in the usual way from then on.
+      rule: Flip this card when the crisis is past

@@ -1,371 +1,373 @@
-- template: &template
-    stack: Condition
-    NOTES: 
-      - is how the condition limits the fiction
-      - I want to know how that changes the fictional situation for your character moving forward.
-- template: &tfront
-    <<: *template
-    rule: Flip to worsen the condition and get a hit. Discard by spending a scene attending to the condition.
-- template: &tback
-    <<: *template
-    rule: Discard by spending downtime attending to the condition.
-- front: &conditions
-    name: Condition Cards
-    stack: Core Rules
-    iconImg: condition
-    desc: >
-      You've been affected by injury, delirium, debts, magical curses, or other problems.
+templates:
+  - template: &template
+      stack: Condition
+      NOTES: 
+        - is how the condition limits the fiction
+        - I want to know how that changes the fictional situation for your character moving forward.
+  - template: &tfront
+      <<: *template
+      rule: Flip to worsen the condition and get a hit. Discard by spending a scene attending to the condition.
+  - template: &tback
+      <<: *template
+      rule: Discard by spending downtime attending to the condition.
+cards:
+  - front: &conditions
+      name: Condition Cards
+      stack: Core Rules
+      iconImg: condition
+      desc: >
+        You've been affected by injury, delirium, debts, magical curses, or other problems.
 
-      You can take a condition to get a hit. Describe how. Players who challenge you can suggest conditions to meet it.
-      
-      The condition is fictionally true and limits your actions.
-      If you narrate an action the condition would interfere with,
-      you must meet the challenge of the condition in addition to any other challenges.
-      
-      You can flip a front-side condition to worsen it and get a hit. Describe how.
-      
-      Clearing conditions takes time. Use this time to drive drama,
-      build the world, or explore how you clear the condition.
-      
-      Discard any conditions that no longer apply in the fiction.
-    rule: Flip to see examples
-  back:
-    name: Condition Examples
-    stack: Core Rules
-    iconImg: condition
-    desc: >
-      Conditions are a way to achieve success at a cost.
-      You can use conditions in many ways.
-    prompts:
-      - "You choose to take Disarmed to score a telling blow on the enemy."
-      - "The facilitator or another player thinks touching the idol will leave you Magicked."
-      - "A poisonous cloud envelops you. If you want to stay in it, meet the challenge by taking Weakened."
-      - "You're already Hurt, but you can worsen it to Wounded to get a hit. You attack, blood gushing from reopened wounds, and strike down your enemy before falling in a faint yourself."
-      - "You spend a scene being healed by a priestess to discard Hurt. You wanted to talk to her anyway, about..."
-      - "You spend a week of downtime doing odd jobs to pay off Indebted. During that time, you listen for new adventure opportunities."
-    rule: Flip to see rules
-- front:
-    <<: *tfront
-    name: Hurt
-    desc: >
-      //"Ow! Watch who you carve up with that thing!" -- Basler
-      
-      You've been bloodied, bruised, stunned, or suffered some other
-      temporary physical harm.
-      
-      You can't exert yourself too much without making it worse.
-      Enemies can target existing sites of injury as well.
-      
-      Do you have access to healing magic and potions,
-      or just bandages and first aid?
-      Who treats your injuries?
-    prompts:
-      - An enemy successfully attacked you
-      - An animal or monster mauled you
-      - You were in the path of something heavy and damaging
-      - You were in the middle of a natural disaster or large-scale magical attack
-  back:
-    <<: *tback
-    name: Wounded
-    desc: >
-      //"It's...just a scratch..." -- Emory
-      
-      You've been seriously injured. You might pass out if you aren't helped soon.
-      Every step is painful, and it's hard to concentrate.
-      
-      You can't move very fast or fight effectively.
-      Someone might also exploit your condition.
-      
-      Where do you stay while recuperating? Under whose care?
-      What special measures must be taken?
-      Do you retain scars?
-    prompts:
-      - You suffered significant blood loss
-      - You have broken or twisted limbs
-      - You were pierced by arrows, spears, or claws
-      - You reopened your wounds while fighting
-  qty: 6
-- front:
-    <<: *tfront
-    name: Weakened
-    desc: >
-      //"This forest goes on forever, Woody. Can we just stop a moment?" -- Tana
-      
-      Your body is trying to keep itself going, but is under attack or is being deprived.
-      
-      You can't push yourself too hard, and it's hard to concentrate.
-      
-      Do you need shelter, medicine, food and water, or just sleep?
-      What are your symptoms? Is there anything you take to ease them?
-      Did you hide them to press on?
-    prompts:
-      - Fatigue or forced marches
-      - Sleep deprivation or nightmares
-      - Hunger and thirst
-      - Poison, disease, or infection
-      - Exposure to the elements
-      - Fever or chills
-  back:
-    <<: *tback
-    name: Exhausted
-    desc: >
-      //"The leaf dragon's toxin got me... Sorry..." -- Woody
-      
-      Your body is out of resources. You pushed yourself to a breaking point.
-      
-      You can't fight effectively. Each new step is an effort.
-      Focusing on anything other than survival is difficult.
-      
-      Where do you recover? At what cost?
-      Do you experience dreams or delirium?
-      What rare ingredient does your medicine require?
-    prompts:
-      - Extended lack of sleep
-      - Starvation or dehydration
-      - Serious illness or poison
-      - Delerium or hallucinations
-      - Burns or frostbite
-  qty: 6
-- front:
-    <<: *tfront
-    name: Obliged
-    desc: >
-      //"We will deal with the brigands, your highness." -- Emory
+        You can take a condition to get a hit. Describe how. Players who challenge you can suggest conditions to meet it.
+        
+        The condition is fictionally true and limits your actions.
+        If you narrate an action the condition would interfere with,
+        you must meet the challenge of the condition in addition to any other challenges.
+        
+        You can flip a front-side condition to worsen it and get a hit. Describe how.
+        
+        Clearing conditions takes time. Use this time to drive drama,
+        build the world, or explore how you clear the condition.
+        
+        Discard any conditions that no longer apply in the fiction.
+      rule: Flip to see examples
+    back:
+      name: Condition Examples
+      stack: Core Rules
+      iconImg: condition
+      desc: >
+        Conditions are a way to achieve success at a cost.
+        You can use conditions in many ways.
+      prompts:
+        - "You choose to take Disarmed to score a telling blow on the enemy."
+        - "The facilitator or another player thinks touching the idol will leave you Magicked."
+        - "A poisonous cloud envelops you. If you want to stay in it, meet the challenge by taking Weakened."
+        - "You're already Hurt, but you can worsen it to Wounded to get a hit. You attack, blood gushing from reopened wounds, and strike down your enemy before falling in a faint yourself."
+        - "You spend a scene being healed by a priestess to discard Hurt. You wanted to talk to her anyway, about..."
+        - "You spend a week of downtime doing odd jobs to pay off Indebted. During that time, you listen for new adventure opportunities."
+      rule: Flip to see rules
+  - front:
+      <<: *tfront
+      name: Hurt
+      desc: >
+        //"Ow! Watch who you carve up with that thing!" -- Basler
+        
+        You've been bloodied, bruised, stunned, or suffered some other
+        temporary physical harm.
+        
+        You can't exert yourself too much without making it worse.
+        Enemies can target existing sites of injury as well.
+        
+        Do you have access to healing magic and potions,
+        or just bandages and first aid?
+        Who treats your injuries?
+      prompts:
+        - An enemy successfully attacked you
+        - An animal or monster mauled you
+        - You were in the path of something heavy and damaging
+        - You were in the middle of a natural disaster or large-scale magical attack
+    back:
+      <<: *tback
+      name: Wounded
+      desc: >
+        //"It's...just a scratch..." -- Emory
+        
+        You've been seriously injured. You might pass out if you aren't helped soon.
+        Every step is painful, and it's hard to concentrate.
+        
+        You can't move very fast or fight effectively.
+        Someone might also exploit your condition.
+        
+        Where do you stay while recuperating? Under whose care?
+        What special measures must be taken?
+        Do you retain scars?
+      prompts:
+        - You suffered significant blood loss
+        - You have broken or twisted limbs
+        - You were pierced by arrows, spears, or claws
+        - You reopened your wounds while fighting
+    qty: 6
+  - front:
+      <<: *tfront
+      name: Weakened
+      desc: >
+        //"This forest goes on forever, Woody. Can we just stop a moment?" -- Tana
+        
+        Your body is trying to keep itself going, but is under attack or is being deprived.
+        
+        You can't push yourself too hard, and it's hard to concentrate.
+        
+        Do you need shelter, medicine, food and water, or just sleep?
+        What are your symptoms? Is there anything you take to ease them?
+        Did you hide them to press on?
+      prompts:
+        - Fatigue or forced marches
+        - Sleep deprivation or nightmares
+        - Hunger and thirst
+        - Poison, disease, or infection
+        - Exposure to the elements
+        - Fever or chills
+    back:
+      <<: *tback
+      name: Exhausted
+      desc: >
+        //"The leaf dragon's toxin got me... Sorry..." -- Woody
+        
+        Your body is out of resources. You pushed yourself to a breaking point.
+        
+        You can't fight effectively. Each new step is an effort.
+        Focusing on anything other than survival is difficult.
+        
+        Where do you recover? At what cost?
+        Do you experience dreams or delirium?
+        What rare ingredient does your medicine require?
+      prompts:
+        - Extended lack of sleep
+        - Starvation or dehydration
+        - Serious illness or poison
+        - Delerium or hallucinations
+        - Burns or frostbite
+    qty: 6
+  - front:
+      <<: *tfront
+      name: Obliged
+      desc: >
+        //"We will deal with the brigands, your highness." -- Emory
 
-      You have a heavy responsibility, and someone is watching to make sure you uphold it.
-      There will be consequences if you delay or decline.
+        You have a heavy responsibility, and someone is watching to make sure you uphold it.
+        There will be consequences if you delay or decline.
 
-      Your patron might grow impatient or demand more. Rivals or enemies might interfere.
-      The task might need to be kept secret, lest someone be hurt.
+        Your patron might grow impatient or demand more. Rivals or enemies might interfere.
+        The task might need to be kept secret, lest someone be hurt.
 
-      Do you have to fight, haggle, or steal something to make good?
-      Do you end up making new enemies? New friends?
-    prompts:
-      - Deliver an item or message to someone
-      - Deal with a troublesome individual or group
-      - Promise a favor later for a purchase now
-      - Swear a magically binding oath
-  back:
-    <<: *tback
-    name: Indebted
-    desc: >
-      //"I kinda told the thieves' guild I'd take care of something" -- Basler
-      
-      You have significant debts that demand your time or attention.
-      The stakes may be higher, or just more immediate.
-      You may risk notoriety or condemnation.
-      
-      Your patron is watching closely and may try to threaten or coerce you further.
-      Other interested parties or powerful forces may interfere,
-      perhaps to stop your task or hurt your patron.
-      
-      Do you have to lay low, face the heat, go on the run?
-      Who offers a devil's bargain to make this go away?
-    prompts:
-      - Get something to someone right now
-      - Deal with several complex problems
-      - Obtain something illegal or dangerous
-      - Work with a person or group that is hated or feared
-  qty: 6
-- front:
-    <<: *tfront
-    name: Wanted
-    desc: >
-      //"I think they saw us." -- Tana
-      
-      Someone or something powerful or dangerous is seeking you out,
-      and you'd rather not be found.
-      
-      You risk discovery if you present yourself to guards, spies, or allies.
-      There might be a bounty on you, or hunters after you.
-      
-      Can you lay low, or do you need to leave the area?
-      Who can you trust, and who would rat you out?
-      What do you sacrifice to keep safe?
-    prompts:
-      - You broke the law or offended someone
-      - You're in a heavily guarded area and people are suspicious
-      - You've done something to attract official attention
-      - You're in a dangerous animal's territory
-  back:
-    <<: *tback
-    name: Pursued
-    desc: >
-      //"They definitely saw us!" -- Basler
-      
-      You are being actively hunted, by someone or something that wishes you ill.
+        Do you have to fight, haggle, or steal something to make good?
+        Do you end up making new enemies? New friends?
+      prompts:
+        - Deliver an item or message to someone
+        - Deal with a troublesome individual or group
+        - Promise a favor later for a purchase now
+        - Swear a magically binding oath
+    back:
+      <<: *tback
+      name: Indebted
+      desc: >
+        //"I kinda told the thieves' guild I'd take care of something" -- Basler
+        
+        You have significant debts that demand your time or attention.
+        The stakes may be higher, or just more immediate.
+        You may risk notoriety or condemnation.
+        
+        Your patron is watching closely and may try to threaten or coerce you further.
+        Other interested parties or powerful forces may interfere,
+        perhaps to stop your task or hurt your patron.
+        
+        Do you have to lay low, face the heat, go on the run?
+        Who offers a devil's bargain to make this go away?
+      prompts:
+        - Get something to someone right now
+        - Deal with several complex problems
+        - Obtain something illegal or dangerous
+        - Work with a person or group that is hated or feared
+    qty: 6
+  - front:
+      <<: *tfront
+      name: Wanted
+      desc: >
+        //"I think they saw us." -- Tana
+        
+        Someone or something powerful or dangerous is seeking you out,
+        and you'd rather not be found.
+        
+        You risk discovery if you present yourself to guards, spies, or allies.
+        There might be a bounty on you, or hunters after you.
+        
+        Can you lay low, or do you need to leave the area?
+        Who can you trust, and who would rat you out?
+        What do you sacrifice to keep safe?
+      prompts:
+        - You broke the law or offended someone
+        - You're in a heavily guarded area and people are suspicious
+        - You've done something to attract official attention
+        - You're in a dangerous animal's territory
+    back:
+      <<: *tback
+      name: Pursued
+      desc: >
+        //"They definitely saw us!" -- Basler
+        
+        You are being actively hunted, by someone or something that wishes you ill.
 
-      You must stay hidden, disguise yourself when in the open, or take other steps to avoid attention.
+        You must stay hidden, disguise yourself when in the open, or take other steps to avoid attention.
 
-      Your pursuers might have some idea about your immediate goals, and work to thwart them as well.
+        Your pursuers might have some idea about your immediate goals, and work to thwart them as well.
 
-      What new discoveries does your escape lead you to?
-      How do you change your identity or habits to escape notice?
-      What threatens your sanctuary that's just as dangerous as your pursuers?
-    prompts:
-      - Wanted posters or official notices
-      - Guards raised an alarm
-      - You're in enemy territory or surrounded
-  qty: 6
-- front:
-    <<: *tfront
-    name: Magicked
-    desc: >
-      //"Be careful. If anything in the forest looks edible, it's a faerie trap" -- Woody
-      
-      A spell or other supernatural power is affecting you.
-      It might cause discomfort, distraction, or inconvenience.
-      Your perceptions might be twisted somehow.
-      
-      You must be careful when doing things that would set off the spell.
-      
-      What weird rituals or strange ingredients diminish or slow the effects on you?
-      What obnoxious compulsions or taboos does it force on you?
-      What price must you pay to free yourself?
-    prompts:
-      - Charms, illusions, delusions, and deceptions
-      - Magical prohibitions against entering or leaving a place
-      - Vexing problems, bad luck, or other trickery
-  back:
-    <<: *tback
-    name: Cursed
-    desc: >
-      //"That berry was delicious. Hey, who are all of you?" -- Emory
-      
-      A powerful and baneful magic has you in its grip.
-      You might be under a geas or other powerful compulsion,
-      to act or not act in a certain way.
-      
-      The rules of the curse may be a mystery.
-      You may suffer pain or great misfortune violating them.
+        What new discoveries does your escape lead you to?
+        How do you change your identity or habits to escape notice?
+        What threatens your sanctuary that's just as dangerous as your pursuers?
+      prompts:
+        - Wanted posters or official notices
+        - Guards raised an alarm
+        - You're in enemy territory or surrounded
+    qty: 6
+  - front:
+      <<: *tfront
+      name: Magicked
+      desc: >
+        //"Be careful. If anything in the forest looks edible, it's a faerie trap" -- Woody
+        
+        A spell or other supernatural power is affecting you.
+        It might cause discomfort, distraction, or inconvenience.
+        Your perceptions might be twisted somehow.
+        
+        You must be careful when doing things that would set off the spell.
+        
+        What weird rituals or strange ingredients diminish or slow the effects on you?
+        What obnoxious compulsions or taboos does it force on you?
+        What price must you pay to free yourself?
+      prompts:
+        - Charms, illusions, delusions, and deceptions
+        - Magical prohibitions against entering or leaving a place
+        - Vexing problems, bad luck, or other trickery
+    back:
+      <<: *tback
+      name: Cursed
+      desc: >
+        //"That berry was delicious. Hey, who are all of you?" -- Emory
+        
+        A powerful and baneful magic has you in its grip.
+        You might be under a geas or other powerful compulsion,
+        to act or not act in a certain way.
+        
+        The rules of the curse may be a mystery.
+        You may suffer pain or great misfortune violating them.
 
-      What quest does lifting the curse entail?
-      What sacrifices or dangers do you brave to undo it?
-      Must someone else pay a price on your behalf?
-    prompts:
-      - Ill fortune or calamity follows you
-      - A taboo against doing some common thing
-      - Love potions, gibberish speech, or other maledictions
-  qty: 6
-- front:
-    <<: *tfront
-    name: Altered
-    desc: >
-      //"Don't let them peck you, or you'll croak with the voice of the Raven God" -- Woody
-      
-      Powerful magic has physically changed your appearance or abilities.
-      Your new features might be helpful in limited ways,
-      but mostly they're a hindrance.
-      
-      You'll have trouble doing things you took for granted,
-      or draw attention to yourself if seen.
-      
-      What's the worst side effect of the change?
-      What mystic ingredient or substance can hold the change at bay, or undo it?
-      Who looks at you funny, and what might they do next?
-    prompts:
-      - Animal traits like tails, claws, or scales
-      - Limbs or extremities turned to stone or plant life
-      - Physically marked with supernatural quirks
-  back:
-    <<: *tback
-    name: Transformed
-    desc: >
-      //"Hey, that raven looks familiar... Basler?!" -- Tana
-      
-      You've been physically remade into something new by powerful magic.
-      You can still function, but it's a big adjustment.
-      
-      Other people may react with fear, curiosity, or hostility.
-      You may be unable to speak or explain yourself to them.
-      
-      Who or what could undo the magic that holds you?
-      What must you do, obtain, or discard to return to your former self?
-      Who now hates or hunts you?
-    prompts:
-      - Polymorphed into an animal
-      - Changed into a supernatural creature
-      - Made undead or demonic
-  qty: 6
-- front:
-    <<: *tfront
-    name: Undergeared
-    desc: >
-      //"This is the last of our fresh water." -- Woody
-      
-      Vital gear has been damaged, or resources are running low.
-      
-      You might have lost something and been forced to make do.
-      You can't overuse what you have, lest things get worse.
-      You might need to ration what you have.
-      
-      What have you lost that's hardest to live without?
-      Can you use some ingenuity to get by with whatever's left, or what you can scrounge?
-      Who in the area has a replacement, and what do they want for it?
-    prompts:
-      - Blunted or broken weapons, low on arrows
-      - Damaged or partial armor
-      - Malfunctioning magical tools
-      - Lacking food, water, or medicine
-  back:
-    <<: *tback
-    name: Ungeared
-    desc: >
-      //"The flood washed away our campsite! Now what?" -- Basler
-      
-      Your gear has been broken, lost, or taken,
-      or you are out of some important resource.
-      
-      You must scavenge for substitutes, or make do with barely-adequate improvisations.
-      If you lack basic necessities like food, you must hunt for them soon.
-      
-      Where must you go to get what you need?
-      Who has it, and what do they demand for it?
-      How do you change habits or tactics to deal with the problems cause by what you lack?
-    prompts:
-      - Equipment lost in floods or other calamity
-      - Stripped of weapons by enemies
-      - Magical tools disenchanted
-      - Completely without rations or shelter
-  qty: 6
-- front:
-    <<: *tfront
-    name: Hindered
-    desc: >
-      //"This arm is useless for drawing a bow right now." -- Woody
-      
-      Your body, mind, or senses are in temporary disorder.
-      You might have overtaxed yourself, or suffered from injury or stress.
-      You may be in the grip of a powerful or magically-caused emotion.
-      
-      You will have trouble using affected abilities,
-      making rational decisions, or spotting important clues or danger signs.
-      
-      Who fixes you up so you can at least keep going?
-      How do they help, and what does it take?
-      What support do you now need from those around you?
-    prompts:
-      - Injured limbs or impaired mobility
-      - Blurred vision, ringing ears, or dizziness
-      - Serious shock or mental disturbance
-      - Powerful anger, grief, sadness, or anxiety
-  back:
-    <<: *tback
-    name: Impeded
-    desc: >
-      //"I can't feel the grimoire! I can't feel ANY magic!" -- Tana
-      
-      A sense or faculty you normally depend on has been temporarily lost.
-      You might have pushed yourself past a limit, or been affected by a disease or magical effect.
+        What quest does lifting the curse entail?
+        What sacrifices or dangers do you brave to undo it?
+        Must someone else pay a price on your behalf?
+      prompts:
+        - Ill fortune or calamity follows you
+        - A taboo against doing some common thing
+        - Love potions, gibberish speech, or other maledictions
+    qty: 6
+  - front:
+      <<: *tfront
+      name: Altered
+      desc: >
+        //"Don't let them peck you, or you'll croak with the voice of the Raven God" -- Woody
+        
+        Powerful magic has physically changed your appearance or abilities.
+        Your new features might be helpful in limited ways,
+        but mostly they're a hindrance.
+        
+        You'll have trouble doing things you took for granted,
+        or draw attention to yourself if seen.
+        
+        What's the worst side effect of the change?
+        What mystic ingredient or substance can hold the change at bay, or undo it?
+        Who looks at you funny, and what might they do next?
+      prompts:
+        - Animal traits like tails, claws, or scales
+        - Limbs or extremities turned to stone or plant life
+        - Physically marked with supernatural quirks
+    back:
+      <<: *tback
+      name: Transformed
+      desc: >
+        //"Hey, that raven looks familiar... Basler?!" -- Tana
+        
+        You've been physically remade into something new by powerful magic.
+        You can still function, but it's a big adjustment.
+        
+        Other people may react with fear, curiosity, or hostility.
+        You may be unable to speak or explain yourself to them.
+        
+        Who or what could undo the magic that holds you?
+        What must you do, obtain, or discard to return to your former self?
+        Who now hates or hunts you?
+      prompts:
+        - Polymorphed into an animal
+        - Changed into a supernatural creature
+        - Made undead or demonic
+    qty: 6
+  - front:
+      <<: *tfront
+      name: Undergeared
+      desc: >
+        //"This is the last of our fresh water." -- Woody
+        
+        Vital gear has been damaged, or resources are running low.
+        
+        You might have lost something and been forced to make do.
+        You can't overuse what you have, lest things get worse.
+        You might need to ration what you have.
+        
+        What have you lost that's hardest to live without?
+        Can you use some ingenuity to get by with whatever's left, or what you can scrounge?
+        Who in the area has a replacement, and what do they want for it?
+      prompts:
+        - Blunted or broken weapons, low on arrows
+        - Damaged or partial armor
+        - Malfunctioning magical tools
+        - Lacking food, water, or medicine
+    back:
+      <<: *tback
+      name: Ungeared
+      desc: >
+        //"The flood washed away our campsite! Now what?" -- Basler
+        
+        Your gear has been broken, lost, or taken,
+        or you are out of some important resource.
+        
+        You must scavenge for substitutes, or make do with barely-adequate improvisations.
+        If you lack basic necessities like food, you must hunt for them soon.
+        
+        Where must you go to get what you need?
+        Who has it, and what do they demand for it?
+        How do you change habits or tactics to deal with the problems cause by what you lack?
+      prompts:
+        - Equipment lost in floods or other calamity
+        - Stripped of weapons by enemies
+        - Magical tools disenchanted
+        - Completely without rations or shelter
+    qty: 6
+  - front:
+      <<: *tfront
+      name: Hindered
+      desc: >
+        //"This arm is useless for drawing a bow right now." -- Woody
+        
+        Your body, mind, or senses are in temporary disorder.
+        You might have overtaxed yourself, or suffered from injury or stress.
+        You may be in the grip of a powerful or magically-caused emotion.
+        
+        You will have trouble using affected abilities,
+        making rational decisions, or spotting important clues or danger signs.
+        
+        Who fixes you up so you can at least keep going?
+        How do they help, and what does it take?
+        What support do you now need from those around you?
+      prompts:
+        - Injured limbs or impaired mobility
+        - Blurred vision, ringing ears, or dizziness
+        - Serious shock or mental disturbance
+        - Powerful anger, grief, sadness, or anxiety
+    back:
+      <<: *tback
+      name: Impeded
+      desc: >
+        //"I can't feel the grimoire! I can't feel ANY magic!" -- Tana
+        
+        A sense or faculty you normally depend on has been temporarily lost.
+        You might have pushed yourself past a limit, or been affected by a disease or magical effect.
 
-      You are unable to use the affected abilities.
-      If your mind or senses are affected, you may make important mistakes in judgement.
+        You are unable to use the affected abilities.
+        If your mind or senses are affected, you may make important mistakes in judgement.
 
-      What changes for you, physically or emotionally?
-      What new understanding do you gain?
-      Do you try to go back to how you were, or go forward to something new?
-    prompts:
-      - Temporarily blind, deaf, or mute
-      - Unable to cast spells or use other special abilities
-      - Suffering a breakdown or phobia
-  qty: 6
+        What changes for you, physically or emotionally?
+        What new understanding do you gain?
+        Do you try to go back to how you were, or go forward to something new?
+      prompts:
+        - Temporarily blind, deaf, or mute
+        - Unable to cast spells or use other special abilities
+        - Suffering a breakdown or phobia
+    qty: 6

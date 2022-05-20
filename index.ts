@@ -92,12 +92,12 @@ export interface ConstellationCard {
     /**
      * All cards belong in a deck, e.g. "CORE"
      */
-    deck: ConstellationCardDeck;
+    deck: ConstellationCardId<ConstellationCardDeck>;
 
     /**
      * All cards belong in a stack, e.g. "Character (Focus)"
      */
-    stack: ConstellationCardStack;
+    stack: ConstellationCardId<ConstellationCardStack>;
 
     /**
      * Cards have front and back faces
