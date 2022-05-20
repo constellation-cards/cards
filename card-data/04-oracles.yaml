@@ -1,0 +1,94 @@
+- template: &emotion-hidden
+    name: Emotion
+    img: help-circle.png
+    stack: Emotion Oracle
+    desc: >
+      Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.
+      
+      Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.
+      
+      Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.
+    rule: Flip to reveal an answer
+- template: &emotion-revealed
+    stack: Emotion Oracle
+    rule: Discard and shuffle into related cards
+- front: *emotion-hidden
+  back:
+    <<: *emotion-revealed
+    name: Ecstacy
+    desc: >
+      Ecstacy, Joy, or Serenity.
+      
+      With Vigilance: yields Optimism.
+      
+      With Admiration: yields Love.
+- front: *emotion-hidden
+  back:
+    <<: *emotion-revealed
+    name: Admiration
+    desc: >
+      Admiration, Trust, or Acceptance.
+      
+      With Ecstacy: yields Love.
+      
+      With Terror: yields Submission.
+- front: *emotion-hidden
+  back:
+    <<: *emotion-revealed
+    name: Terror
+    desc: >
+      Terror, Fear, or Apprehension.
+      
+      With Admiration: yields Submission.
+      
+      With Amazement: yields Awe.
+- front: *emotion-hidden
+  back:
+    <<: *emotion-revealed
+    name: Amazement
+    desc: >
+      Amazement, Surprise, or Distraction.
+      
+      With Terror: yields Awe.
+      
+      With Grief: yields Disapproval.
+- front: *emotion-hidden
+  back:
+    <<: *emotion-revealed
+    name: Grief
+    desc: >
+      Grief, Sadness, or Pensiveness.
+      
+      With Amazement: yields Disapproval.
+      
+      With Loathing: yields Remorse.
+- front: *emotion-hidden
+  back:
+    <<: *emotion-revealed
+    name: Loathing
+    desc: >
+      Loathing, Disgust, or Boredom.
+      
+      With Grief: yields Remorse.
+      
+      With Rage: yields Contempt.
+- front: *emotion-hidden
+  back:
+    <<: *emotion-revealed
+    name: Rage
+    desc: >
+      Rage, Anger, or Annoyance.
+      
+      With Loathing: yields Contempt.
+      
+      With Vigilance: yields Aggressiveness.
+- front: *emotion-hidden
+  back:
+    <<: *emotion-revealed
+    name: Vigilance
+    desc: >
+      Vigilance, Anticipation, or Interest.
+      
+      With Rage: yields Aggressiveness.
+      
+      With Ecstacy: yields Optimism.

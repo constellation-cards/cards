@@ -1,0 +1,175 @@
+- template: &dynamic-front
+    stack: City (Dynamic)
+    rule: Flip to see the unstable version of this dynamic
+- template: &dynamic-back
+    stack: City (Dynamic)
+    rule: Flip to see the stable version of this dynamic
+- front: &Artistic
+    <<: *dynamic-front
+    name: Artistic
+    desc: >
+      mundane goods and services
+    prompts:
+      - TBD
+  back:
+    <<: *dynamic-back
+    name: Artistic
+    desc: >
+      TBD
+    prompts:
+      - TBD
+- front: &Criminal
+    <<: *dynamic-front
+    name: Criminal
+    desc: >
+      Two neighborhoods are connected via criminal activity.
+      This could range from petty theft or pickpocketing,
+      to smuggling of contraband, to intimidation or murder.
+      Not every criminal is disliked; someone who steals from
+      the rich to give to the poor will be popular among the poor.
+
+      A stable Criminal dynamic often means organized crime,
+      such as a cartel, criminal fraternity, thieves' guild,
+      or the like.
+    prompts:
+      - What kinds of laws exist in the city? Which ones are being broken?
+      - Who enforces those laws? Why aren't they doing so here?
+      - How does the public view this criminal element, e.g. as heroes or villains?
+  back:
+    <<: *dynamic-back
+    name: Criminal
+    desc: >
+      Two neighborhoods are connected via criminal activity.
+      This could range from petty theft or pickpocketing,
+      to smuggling of contraband, to intimidation or murder.
+      Not every criminal is disliked; someone who steals from
+      the rich to give to the poor will be popular among the poor.
+
+      An unstable Criminal dynamic might mean gang war
+      between rival criminal factions. It might also mean
+      a single leader is responsible, and they could be taken
+      down via force or guile.
+    prompts:
+      - What kinds of laws exist in the city?
+      - Who enforces those laws? Why aren't they doing so here?
+      - How does the public view this criminal element, e.g. as heroes or villains?
+- front: &Commercial
+    <<: *dynamic-front
+    name: Commercial
+    desc: >
+      People from one neighborhood buy or sell
+      goods and services to the other.
+      Advertising, word of mouth, or tradition might
+      entice new visitors.
+
+      A stable Commercial dynamic means there's enough
+      to go around, or that the market is adaptable enough
+      to come up with something new when tastes change.
+    prompts:
+      - Who pays whom, and for what?
+      - Who benefits from the arrangement? Who suffers?
+      - Who would like a piece of the action?
+  back:
+    <<: *dynamic-back
+    name: Commercial
+    desc: >
+      People from one neighborhood in the dynamic
+      buy or sell goods and services to the other.
+      It might be hard to find what you're looking
+      for, however.
+
+      An unstable Commercial dynamic indicates a market
+      in flux, such as prices rapidly changing, too much
+      supply, or too little demand. Workers might be in
+      short supply, or customers are drying up.
+    prompts:
+      - Who gains from the instability? Who loses?
+      - Where else can supply, demand, or labor be found instead?
+      - How are people coping?
+- front: &Esoteric
+    <<: *dynamic-front
+    name: Esoteric
+    desc: >
+      arcane goods and services
+    prompts:
+      - TBD
+  back:
+    <<: *dynamic-back
+    name: Esoteric
+    desc: >
+      TBD
+    prompts:
+      - TBD
+- front: &External
+    <<: *dynamic-front
+    name: External
+    desc: >
+      activities originating outside the city
+    prompts:
+      - TBD
+  back:
+    <<: *dynamic-back
+    name: External
+    desc: >
+      TBD
+    prompts:
+      - TBD
+- front: &Financial
+    <<: *dynamic-front
+    name: Financial
+    desc: >
+      money and valuables
+    prompts:
+      - TBD
+  back:
+    <<: *dynamic-back
+    name: Financial
+    desc: >
+      TBD
+    prompts:
+      - TBD
+- front: &Political
+    <<: *dynamic-front
+    name: Political
+    desc: >
+      Two neighborhoods interact via power, influence, and leadership.
+      One might dominate another, depend on another for legitimacy,
+      or prioritize or ignore that neighborhood's needs in particular.
+
+      A stable Political dynamic means a long-standing arrangement
+      or an entrenched situation. Enough people, or the right people,
+      like things as they are and work to keep it that way.
+    prompts:
+      - Who benefits from the situation? Who suffers?
+      - What keeps the relationship going?
+      - How reluctant are people to acknowledge or confront the situation?
+  back:
+    <<: *dynamic-back
+    name: Political
+    desc: >
+      Two neighborhoods interact via power, influence, and leadership.
+      One might dominate another, depend on another for legitimacy,
+      or prioritize or ignore that neighborhood's needs in particular.
+
+      An unstable Political dynamic means the power structure is collapsing,
+      whether due to internal conflicts or outside agitation.
+      Something's going to topple the tower of power,
+      but who will be beneath it when it finally falls?
+    prompts:
+      - Who is agitating for change? Who holds the line?
+      - What outside influences are present? Who do they support?
+      - Is the struggle physically peaceful or violent?
+- front: &Social
+    <<: *dynamic-front
+    name: Social
+    desc: >
+      Two neighborhoods play off each other via fashion or pop culture.
+    prompts:
+      - TBD
+  back:
+    <<: *dynamic-back
+    name: Social
+    desc: >
+      TBD
+    prompts:
+      - TBD

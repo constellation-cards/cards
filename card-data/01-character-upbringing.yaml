@@ -1,0 +1,253 @@
+- template: &template
+    stack: Character (Upbringing)
+- template: &tfront
+    <<: *template
+    rule: Flip to get a hit.
+- template: &tback
+    <<: *template
+    rule: Flip when a prompt is narrated by anyone.
+- front: &Cosmopolitan
+    <<: *tfront
+    name: Cosmopolitan
+    desc: >
+      //"The clear skies, the lure of the open road, it's perfect!" -- Tana
+
+      You've lived your life among people from all over.
+      Maybe you lived in a bustling city, or maybe you
+      traveled the world.
+      You listened to their stories and saw their ways of living.
+
+      You've learned to approach situations by understanding many perspectives.
+    prompts:
+      - Recall a story that inspires people to new ways of thinking
+      - Bring a fresh perspective to a situation
+      - Unite people by finding the common threads between them
+  back:
+    <<: *tback
+    name: Cosmopolitan
+    desc: >
+      //"Do these wagon wheels fall off often?" -- Emory
+
+      It's possible to mistake your breadth of experience for depth,
+      and fail to hear wiser voices.
+      Similarly, you can make false assumptions about a culture
+      based on experience with a few of its individuals.
+      There's always more to learn. There's always a new perspective.
+    prompts:
+      - Overestimate your own wisdom or experience
+      - Lose focus of people as individuals
+      - Treat one person as representative of a whole group
+- front: &Industrious
+    <<: *tfront
+    name: Industrious
+    desc: >
+      //"Take a deep breath of that farm air!" -- Tana
+
+      You grew up among farmers, trappers, city laborers,
+      or other folk who made their way by the sweat of their brow.
+      Others expected you to carry your own weight.
+      Life could be routine, and you learned ways
+      to pass the time.
+
+      You've learned to approach situations with direct, hard work.
+    prompts:
+      - Be sensitive to the rhythms around you--cycles of nature, or people's routines
+      - Make do with what's on hand
+      - Coordinate with others to get hard work done
+  back:
+    <<: *tback
+    name: Industrious
+    desc: >
+      //"Smells like cow breakfast" -- Basler
+
+      Not everyone appreciates the necessity of hard work.
+      But sometimes, just plowing through isn't the right answer either.
+      You're used to getting down in the mud,
+      but it's important to reach for the stars as well.
+    prompts:
+      - Work harder, not smarter
+      - Sacrifice tomorrow's hopes for today's needs
+      - Lay a heavy burden on light shoulders
+- front: &Insular
+    <<: *tfront
+    name: Insular
+    desc: >
+      //"This is all very different from the cloister" -- Emory
+
+      You grew up secluded from the rest of the world.
+      Whether you lived on a lonely mountain village,
+      a religious retreat, or in an enclave within a
+      city, the ways of the outside world are a mystery.
+
+      You've learned to approach situations through curiosity.
+    prompts:
+      - Solve a problem using your peoples' ways
+      - Ask naive but insightful questions
+      - Reveal hidden knowledge or exclusive experience
+  back:
+    <<: *tback
+    name: Insular
+    desc: >
+      //"Everything's different out here. That's why it's called a cloister" -- Basler
+
+      Your early life didn't prepare you for the sheer
+      variey of people and things the world has to offer.
+      You might make a basic blunder, or ask a troubling question.
+      When in doubt, there might be someone you rely on for answers,
+      or you may rely on your upbringing's incomplete picture of things.
+    prompts:
+      - Violate unspoken rules or cultural taboos
+      - Cause conflict through misunderstanding
+      - Fall back on a trusted authority
+- front: &Mercantile
+    <<: *tfront
+    name: Mercantile
+    desc: >
+      //"Welcome to the Labri Market! You can find anything here." -- Basler
+
+      You grew up among those who made their living through trade.
+      This could be the busy markets of a city,
+      an oceanic trade route, or the corridors of power in an embassy or castle.
+      You understand that some people have wants or needs,
+      that others can satisfy them,
+      and the power that comes from mediating between the two.
+
+      You've learned to approach situations through canny negotiation.
+    prompts:
+      - Make a deal or haggle over details
+      - Navigate a complex or ambiguous situation
+      - Gauge someone's wants or needs
+  back:
+    <<: *tback
+    name: Mercantile
+    desc: >
+      //"...For the right price." -- Basler
+
+      Not everything can be reduced to a simple transaction,
+      but some people can't see any other way.
+      It becomes easy to ignore pain and devalue life
+      when money or power becomes a cocoon against existence.
+    prompts:
+      - Compromise a principle or ideal for expedience
+      - Overcomplicate a plan or solution
+      - Value people as commodities rather than individuals with thoughts and feelings
+- front: &Solitary
+    <<: *tfront
+    name: Solitary
+    desc: >
+      //"I got this, leave me alone" -- Woody
+
+      For much of your life, you've been on your own.
+      You might have been orphaned or abandoned or kidnapped.
+      You might have run away from home,
+      or home might no longer exist.
+
+      You've learned to approach situations through isolation.
+    prompts:
+      - Shut out distractions
+      - Present a reassuring facade
+      - Keep moving even when hope is lost
+  back:
+    <<: *tback
+    name: Solitary
+    desc: >
+      //"You've left yourself alone too long" -- Tana
+
+      Without experiencing what other people in your life
+      can do, you may fear what you need most from them:
+      an outlet.
+      When you act distant, others will reciprocate.
+    prompts:
+      - Accumulate emotional debt
+      - Keep your reservations unspoken
+      - Leave others behind to fend for themselves
+- front: &Strict
+    <<: *tfront
+    name: Strict
+    desc: >
+      //"Knights should be glorious champions of honor!" -- Emory
+
+      You knew from a young age that there's a right and wrong way to do things.
+      You might be from a noble family where things are done just so,
+      or your parents might have lived in constant fear of something,
+      and their caution rubbed off on you.
+
+      You've learned to approach situations through protocol.
+    prompts:
+      - Uphold a code of behavior in the face of doubt or weakness
+      - Use the training or skills that led to your code's adoption
+      - Inspire or counsel others using your code
+  back:
+    <<: *tback
+    name: Strict
+    desc: >
+      //"As opposed to ironclad thugs lording it over the peasants?" -- Basler
+
+      While committing to a way of life gives you strength
+      to press on, it can make people inflexible or stubborn.
+      Some will reject anything outside their experience,
+      while others will actively fight against it.
+    prompts:
+      - Refuse to adapt your code to new or difficult situations
+      - See the world through a narrow lens
+      - Disdain or punish those who don't conform to your expectations
+- front: &Underclass
+    <<: *tfront
+    name: Underclass
+    desc: >
+      //"Nobody fights for people like us. So we fight for ourselves." -- Basler
+      
+      You grew up among people who were neglected or rejected
+      by a surrounding society.
+      Your family or neighbors could have been criminals, migrants,
+      members of a disliked minority or species, or anything else.
+
+      You've learned to approach situations via pride.
+    prompts:
+      - Stand up for yourself and those like you
+      - Rally those who question themselves
+      - Obtain your needs through a social network
+  back:
+    <<: *tback
+    name: Underclass
+    desc: >
+      //"When everyone hates you, it's hard not to hate them back." -- Basler
+
+      Sometimes, circumstances push people to a breaking point.
+      Other times, doing the right thing becomes impossible,
+      and you're left with doing the necessary thing.
+    prompts:
+      - Lash out at threats to your ego
+      - Build yourself up in the eyes of the impressionable
+      - Run afoul of those in power
+- front: &Unfettered
+    <<: *tfront
+    name: Unfettered
+    desc: >
+      //"As a princess, I had power. As a ranger, I have freedom." -- Woody
+      
+      Whether you were a scion of privilege,
+      a child wandering the halls of an artisan's guild,
+      or a free spirit roaming a mystic forest,
+      you were accustomed to going where you wished
+      and doing whatever seemed best.
+
+      You've learned to approach situations through force of will.
+    prompts:
+      - Force an issue or break a deadlock through action
+      - Reject restrictions and break chains
+      - Drag others along your unique path
+  back:
+    <<: *tback
+    name: Unfettered
+    desc: >
+      //"Those who go their own way often find the path lonely." -- Emory
+
+      Rules aren't always made to be broken.
+      You can offend others, or even hurt them or yourself
+      when you go where you don't belong
+      or do what you ought not do.
+    prompts:
+      - Sabotage a subtle effort
+      - Trample on a cherished tradition
+      - Disappoint or frustrate a more cautious ally
