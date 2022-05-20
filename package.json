@@ -1,12 +1,11 @@
 {
   "name": "@constellation-cards/cards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Constellation Cards definitions, data, and components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "ts-node card-data/index.ts && tsc",
-    "prepublish": "ts-node card-data/index.ts && tsc",
+    "prepack": "ts-node card-data/index.ts && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
