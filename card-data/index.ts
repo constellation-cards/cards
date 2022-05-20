@@ -1,7 +1,8 @@
+import crypto from 'crypto'
 import fs from 'fs'
 import yaml from 'js-yaml'
 import path from 'path'
-import { filter, flatten, map, mergeRight, pluck } from 'ramda'
+import { append, assoc, filter, flatten, map, mergeRight, pluck, reduce } from 'ramda'
 
 import { ConstellationCard, ConstellationCardDeck, ConstellationCardFace, ConstellationCardStack } from "../index"
 
@@ -41,6 +42,11 @@ const cardTemplate: ConstellationCard = {
     quantity: 1
 }
 
+function idForObject(obj: any): string {
+    const content = JSON.stringify(obj)
+    return crypto.createHash('md5').update(content).digest("hex")
+}
+
 function extractDecks(data: any): ConstellationCardDeck[] {
     return map((record: any) => mergeRight(deckTemplate, record), data)
 }
@@ -55,6 +61,7 @@ function extractFace(data: any): ConstellationCardFace {
 
 function extractCards(data: any): ConstellationCard[] {
     return map((record: any) => mergeRight(cardTemplate, {
+            deck: record.front?.deck || record.back?.deck || "CORE",
             stack: record.front?.stack || record.back?.stack,
             front: extractFace(record.front),
             back: extractFace(record.back)
@@ -92,12 +99,44 @@ function cardFiles(): string[] {
     return yamlPaths
 }
 
+function addIds(objects: any[]): any[] {
+    return map((obj: any) => assoc("id", idForObject(obj), obj), objects)
+}
+
+function addIdsToEverything(data: any) {
+    return {
+        decks: addIds(data.decks) as ConstellationCardDeck[],
+        stacks: addIds(data.stacks) as ConstellationCardStack[],
+        cards: addIds(data.cards) as ConstellationCard[]
+    }
+}
+
+function generateObjectIndex(objects: any[]): Record<string,any> {
+    return reduce((newIndex, obj) => assoc(obj.name, obj, newIndex), {}, objects)
+}
+
 const filePaths = cardFiles()
 const data = readAllFiles(filePaths)
+const dataWithIds = addIdsToEverything(data)
 
-// TODO: add decks & stacks to data files
-// TODO: add IDs to all objects
-// TODO: add cards to decks & stacks
-// TODO: add deck & stack IDs to cards
+const deckIndex = generateObjectIndex(dataWithIds.decks)
+const stackIndex = generateObjectIndex(dataWithIds.stacks)
 
-fs.writeFileSync("cards.json", JSON.stringify(data, null, 2), 'utf8')
+for (let card of dataWithIds.cards) {
+    if (card.deck) {
+        let foundDeck = deckIndex[card.deck]
+        if (foundDeck) {
+            foundDeck.cards = append(card.id, foundDeck.cards)
+            card.deck = foundDeck.id
+        }
+    }
+    if (card.stack) {
+        let foundStack = stackIndex[card.stack]
+        if (foundStack) {
+            foundStack.cards = append(card.id, foundStack.cards)
+            card.stack = foundStack.id
+        }
+    }
+}
+
+fs.writeFileSync("cards.json", JSON.stringify(dataWithIds, null, 2), 'utf8')

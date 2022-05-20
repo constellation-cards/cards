@@ -2,6 +2,7 @@ stacks:
   - name: City (Neighborhood)
 templates:
   - template: &neighborhood-front
+      deck: CITY
       stack: City (Neighborhood)
       rule: Flip to see the struggling version of this neighborhood
   - template: &neighborhood-back

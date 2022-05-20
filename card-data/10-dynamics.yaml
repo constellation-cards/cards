@@ -4,6 +4,7 @@ stacks:
   - name: City (Dynamic)
 templates:
   - template: &dynamic-front
+      deck: CITY
       stack: City (Dynamic)
       rule: Flip to see the unstable version of this dynamic
   - template: &dynamic-back
