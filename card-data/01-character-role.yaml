@@ -1,3 +1,8 @@
+stacks:
+  - name: Character (Role)
+    icons:
+      - star
+      - user
 templates:
   - template: &template
       stack: Character (Role)

@@ -1,3 +1,7 @@
+stacks:
+  - name: Condition
+    icons:
+      - heart
 templates:
   - template: &template
       stack: Condition

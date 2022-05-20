@@ -1,3 +1,8 @@
+stacks:
+  - name: Character (Upbringing)
+    icons:
+      - star
+      - home
 templates:
   - template: &template
       stack: Character (Upbringing)

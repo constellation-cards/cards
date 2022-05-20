@@ -1,3 +1,7 @@
+stacks:
+  - name: Encounter
+    icons:
+      - alert-circle
 templates:
   - template: &template
       stack: Encounter

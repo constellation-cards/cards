@@ -1,3 +1,5 @@
+stacks:
+  - name: City (Neighborhood)
 templates:
   - template: &neighborhood-front
       stack: City (Neighborhood)

@@ -1,3 +1,7 @@
+decks:
+  - name: CITY
+stacks:
+  - name: City (Dynamic)
 templates:
   - template: &dynamic-front
       stack: City (Dynamic)

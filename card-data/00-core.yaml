@@ -1,3 +1,9 @@
+decks:
+  - name: CORE
+stacks:
+  - name: Core Rules
+  - name: Core Rules (Agenda)
+  - name: Core Rules (Crisis)
 templates:
   - template: &template
       stack: Core Rules
