@@ -113,13 +113,46 @@ export interface ConstellationCard {
   quantity: number;
 }
 
-function getDecks(): ConstellationCardDeck[] {
+/**
+ * When dealing a card into this preset, where should it be positioned?
+ */
+export enum ConstellationCardPresetFlipRule {
+  FRONT = "front",
+  BACK = "back",
+  RANDOM = "random"
+}
+
+/**
+ * When dealing a card into this preset, where does it come from?
+ */
+export interface ConstellationCardPresetSource {
+  stack: ConstellationCardId<ConstellationCardStack>;
+  quantity: number;
+  flipRule: ConstellationCardPresetFlipRule;
+}
+
+export interface ConstellationCardPreset {
+  name: string;
+  description: string;
+  sources: ConstellationCardPresetSource[];
+}
+
+export function getDecks(): ConstellationCardDeck[] {
   return cardData.decks;
 }
 
-function getStacks(): ConstellationCardStack[] {
+export function getStacks(): ConstellationCardStack[] {
   return cardData.stacks;
 }
-function getCards(): ConstellationCard[] {
+
+export function getCards(): ConstellationCard[] {
   return cardData.cards;
+}
+
+// Get presets
+
+export default {
+  getDecks,
+  getStacks,
+  getCards
 }

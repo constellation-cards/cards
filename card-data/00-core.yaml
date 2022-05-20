@@ -4,6 +4,9 @@ stacks:
   - name: Core Rules
   - name: Core Rules (Agenda)
   - name: Core Rules (Crisis)
+presets:
+  - name: New Empty Spread
+    description: Create a new empty spread
 templates:
   - template: &template
       stack: Core Rules

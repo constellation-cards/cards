@@ -1,3 +1,16 @@
+presets:
+  - name: New Character
+    description: Create a new character
+    sources:
+      - stack: Character (Upbringing)
+        quantity: 1
+        flipRule: front
+      - stack: Character (Role)
+        quantity: 1
+        flipRule: front
+      - stack: Character (Focus)
+        quantity: 1
+        flipRule: front
 cards:
   - front: &characters
       name: Character Cards

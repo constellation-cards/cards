@@ -9,6 +9,7 @@ import { ConstellationCard, ConstellationCardDeck, ConstellationCardFace, Conste
 interface YamlData {
     decks: any[]
     stacks: any[]
+    presets: any[]
     cards: any[]
 }
 
@@ -75,6 +76,7 @@ function readOneFile(filePath: string) {
     return {
         decks: extractDecks(data.decks || []),
         stacks: extractStacks(data.stacks || []),
+        presets: data.presets || [],
         cards: extractCards(data.cards || [])
     }
 }
@@ -84,6 +86,7 @@ function readAllFiles(filePaths: string[]) {
     return {
         decks: flatten(pluck("decks", records)),
         stacks: flatten(pluck("stacks", records)),
+        presets: flatten(pluck("presets", records)),
         cards: flatten(pluck("cards", records)),
     }
 }
@@ -107,6 +110,7 @@ function addIdsToEverything(data: any) {
     return {
         decks: addIds(data.decks) as ConstellationCardDeck[],
         stacks: addIds(data.stacks) as ConstellationCardStack[],
+        presets: data.presets,
         cards: addIds(data.cards) as ConstellationCard[]
     }
 }
@@ -137,6 +141,10 @@ for (let card of dataWithIds.cards) {
             card.stack = foundStack.id
         }
     }
+}
+
+for (let preset of dataWithIds.presets) {
+    preset.sources = map(source => assoc("stack", stackIndex[source.stack]?.id, source), preset.sources || [])
 }
 
 fs.writeFileSync("cards.json", JSON.stringify(dataWithIds, null, 2), 'utf8')

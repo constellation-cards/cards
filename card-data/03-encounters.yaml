@@ -2,6 +2,16 @@ stacks:
   - name: Encounter
     icons:
       - alert-circle
+presets:
+  - name: New Encounter
+    description: Create a new encounter
+    sources:
+      - stack: Encounter
+        quantity: 2
+        flipRule: front
+      - stack: Emotion Oracle
+        quantity: 1
+        flipRule: back
 templates:
   - template: &template
       stack: Encounter

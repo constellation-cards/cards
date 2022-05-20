@@ -2,6 +2,25 @@ decks:
   - name: CITY
 stacks:
   - name: City (Dynamic)
+presets:
+  - name: New City
+    description: Create a new city
+    sources:
+      - stack: City (Neighborhood)
+        quantity: 1
+        flipRule: random
+      - stack: City (Neighborhood)
+        quantity: 1
+        flipRule: random
+      - stack: City (Neighborhood)
+        quantity: 1
+        flipRule: random
+      - stack: City (Neighborhood)
+        quantity: 1
+        flipRule: random
+      - stack: City (Neighborhood)
+        quantity: 1
+        flipRule: random
 templates:
   - template: &dynamic-front
       deck: CITY
