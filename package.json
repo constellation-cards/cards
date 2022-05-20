@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc && ts-node card-data/index.ts",
-    "prepublish": "tsc",
+    "build": "ts-node card-data/index.ts && tsc",
+    "prepublish": "ts-node card-data/index.ts && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
