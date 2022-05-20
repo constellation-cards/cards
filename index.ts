@@ -145,14 +145,17 @@ export function getStacks(): ConstellationCardStack[] {
   return cardData.stacks;
 }
 
+export function getPresets(): ConstellationCardPreset[] {
+  return cardData.presets as ConstellationCardPreset[];
+}
+
 export function getCards(): ConstellationCard[] {
   return cardData.cards;
 }
 
-// Get presets
-
 export default {
   getDecks,
   getStacks,
+  getPresets,
   getCards
 }
