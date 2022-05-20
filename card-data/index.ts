@@ -52,7 +52,7 @@ function extractStacks(data: any): ConstellationCardStack[] {
 function extractFace(data: any): ConstellationCardFace {
     return mergeRight(faceTemplate, {
         name: data.name,
-        backgroundImage: data.iconImg,
+        backgroundImage: data.backgroundImage,
         description: data.desc,
         prompts: data.prompts,
         rule: data.rule

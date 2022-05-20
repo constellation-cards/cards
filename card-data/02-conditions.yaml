@@ -14,7 +14,7 @@ cards:
   - front: &conditions
       name: Condition Cards
       stack: Core Rules
-      iconImg: condition
+      backgroundImage: condition
       desc: >
         You've been affected by injury, delirium, debts, magical curses, or other problems.
 
@@ -34,7 +34,7 @@ cards:
     back:
       name: Condition Examples
       stack: Core Rules
-      iconImg: condition
+      backgroundImage: condition
       desc: >
         Conditions are a way to achieve success at a cost.
         You can use conditions in many ways.

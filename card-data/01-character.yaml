@@ -2,7 +2,7 @@ cards:
   - front: &characters
       name: Character Cards
       stack: Core Rules
-      iconImg: character
+      backgroundImage: character
       desc: >
         Cards with this icon are character cards.
 
