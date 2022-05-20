@@ -13,21 +13,21 @@ cards:
   - front: &Artistic
       <<: *dynamic-front
       name: Artistic
-      desc: >
+      description: >
         mundane goods and services
       prompts:
         - TBD
     back:
       <<: *dynamic-back
       name: Artistic
-      desc: >
+      description: >
         TBD
       prompts:
         - TBD
   - front: &Criminal
       <<: *dynamic-front
       name: Criminal
-      desc: >
+      description: >
         Two neighborhoods are connected via criminal activity.
         This could range from petty theft or pickpocketing,
         to smuggling of contraband, to intimidation or murder.
@@ -44,7 +44,7 @@ cards:
     back:
       <<: *dynamic-back
       name: Criminal
-      desc: >
+      description: >
         Two neighborhoods are connected via criminal activity.
         This could range from petty theft or pickpocketing,
         to smuggling of contraband, to intimidation or murder.
@@ -62,7 +62,7 @@ cards:
   - front: &Commercial
       <<: *dynamic-front
       name: Commercial
-      desc: >
+      description: >
         People from one neighborhood buy or sell
         goods and services to the other.
         Advertising, word of mouth, or tradition might
@@ -78,7 +78,7 @@ cards:
     back:
       <<: *dynamic-back
       name: Commercial
-      desc: >
+      description: >
         People from one neighborhood in the dynamic
         buy or sell goods and services to the other.
         It might be hard to find what you're looking
@@ -95,49 +95,49 @@ cards:
   - front: &Esoteric
       <<: *dynamic-front
       name: Esoteric
-      desc: >
+      description: >
         arcane goods and services
       prompts:
         - TBD
     back:
       <<: *dynamic-back
       name: Esoteric
-      desc: >
+      description: >
         TBD
       prompts:
         - TBD
   - front: &External
       <<: *dynamic-front
       name: External
-      desc: >
+      description: >
         activities originating outside the city
       prompts:
         - TBD
     back:
       <<: *dynamic-back
       name: External
-      desc: >
+      description: >
         TBD
       prompts:
         - TBD
   - front: &Financial
       <<: *dynamic-front
       name: Financial
-      desc: >
+      description: >
         money and valuables
       prompts:
         - TBD
     back:
       <<: *dynamic-back
       name: Financial
-      desc: >
+      description: >
         TBD
       prompts:
         - TBD
   - front: &Political
       <<: *dynamic-front
       name: Political
-      desc: >
+      description: >
         Two neighborhoods interact via power, influence, and leadership.
         One might dominate another, depend on another for legitimacy,
         or prioritize or ignore that neighborhood's needs in particular.
@@ -152,7 +152,7 @@ cards:
     back:
       <<: *dynamic-back
       name: Political
-      desc: >
+      description: >
         Two neighborhoods interact via power, influence, and leadership.
         One might dominate another, depend on another for legitimacy,
         or prioritize or ignore that neighborhood's needs in particular.
@@ -168,14 +168,14 @@ cards:
   - front: &Social
       <<: *dynamic-front
       name: Social
-      desc: >
+      description: >
         Two neighborhoods play off each other via fashion or pop culture.
       prompts:
         - TBD
     back:
       <<: *dynamic-back
       name: Social
-      desc: >
+      description: >
         TBD
       prompts:
         - TBD

@@ -16,7 +16,7 @@ cards:
   - front: &Courage
       <<: *tfront
       name: Courage
-      desc: >
+      description: >
         //"It doesn't matter if I win. It matters if I don't try." -- Emory
 
         Courage is strength in the face of grief or pain.
@@ -32,7 +32,7 @@ cards:
     back:
       <<: *tback
       name: Courage
-      desc: >
+      description: >
         //"Emory! Fall back! This isn't our fight!" -- Tana
 
         Courage can twist into cowardice or recklessness.
@@ -46,7 +46,7 @@ cards:
   - front: &Charm
       <<: *tfront
       name: Charm
-      desc: >
+      description: >
         //"I only came here to see you!" -- Basler
         
         The essence of charm is creating a bond with someone.
@@ -64,7 +64,7 @@ cards:
     back:
       <<: *tback
       name: Charm
-      desc: >
+      description: >
         //"Listen, city boy. Stop talking or I'll cut your tongue out." -- Woody
 
         Some people can become enraptured by their own ability to impress and influence.
@@ -78,7 +78,7 @@ cards:
   - front: &Instinct
       <<: *tfront
       name: Instinct
-      desc: >
+      description: >
         //"My eye watches the target. My hand lets go the bowstring. I do nothing." -- Woody
 
         You do things without thinking.
@@ -95,7 +95,7 @@ cards:
     back:
       <<: *tback
       name: Instinct
-      desc: >
+      description: >
         //"So, he was a king's guard in disguise. He looked like a bad guy!" -- Woody
 
         Only fools rush in, and this time, you were the fool.
@@ -106,7 +106,7 @@ cards:
   - front: &Magic
       <<: *tfront
       name: Magic
-      desc: >
+      description: >
         //"I don't know, I just felt ... something ... flow through me!" -- Tana
 
         The mystical, the eldritch, the arcane.
@@ -121,7 +121,7 @@ cards:
     back:
       <<: *tback
       name: Magic
-      desc: >
+      description: >
         //"The Power is much like the ocean. You can sail in it, or drown in it." -- Tana
 
         When called, the Power always comes. That doesn't mean you can always command it.
@@ -134,7 +134,7 @@ cards:
   - front: &Secrets
       <<: *tfront
       name: Secrets
-      desc: >
+      description: >
         //"Basler, where did you get that knife from?" -- Tana
 
         You deal in concealment, stealth, and subterfuge.
@@ -149,7 +149,7 @@ cards:
     back:
       <<: *tback
       name: Secrets
-      desc: >
+      description: >
         //"You don't wanna know" -- Basler
 
         The problem with secrets is keeping track of who knows what.
@@ -162,7 +162,7 @@ cards:
   - front: &Tech
       <<: *tfront
       name: Tech
-      desc: >
+      description: >
         //"Y'see, this gizmo here can automatically pick any lock in the kingdom!" -- Basler
 
         You focus on science, technology, or artifice to get things done.
@@ -179,7 +179,7 @@ cards:
     back:
       <<: *tback
       name: Tech
-      desc: >
+      description: >
         //"The gizmo broke and I gotta fix it. Well, at least I have my tools." -- Basler
 
         Nothing works perfectly, especially new inventions
@@ -191,7 +191,7 @@ cards:
   - front: &Training
       <<: *tfront
       name: Training
-      desc: >
+      description: >
         //"The mind directs the body's power. I get it now." -- Basler
 
         Through exercise, mindfulness, and practice,
@@ -206,7 +206,7 @@ cards:
     back:
       <<: *tback
       name: Training
-      desc: >
+      description: >
         //"Well, I can't pick locks with my fingernails, can I?" -- Basler
 
         Your discipline is demanding,
@@ -219,7 +219,7 @@ cards:
   - front: &Wits
       <<: *tfront
       name: Wits
-      desc: >
+      description: >
         //"The world is full of opportunities!" -- Basler
 
         Characters who live by their wits
@@ -236,7 +236,7 @@ cards:
     back:
       <<: *tback
       name: Wits
-      desc: >
+      description: >
         //"When I said people were gullible, I didn't mean me too!" -- Basler
 
         No battle plan survives contact with the enemy,

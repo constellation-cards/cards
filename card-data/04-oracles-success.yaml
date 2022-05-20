@@ -7,7 +7,7 @@ templates:
   - template: &randomfront
       stack: Success Oracle
       name: Random Outcome
-      desc: >
+      description: >
         You can choose to draw a card of this type
         to see if you meet a challenge.
 
@@ -26,7 +26,7 @@ cards:
     back: &hit
       name: Hit
       stack: Success Oracle
-      desc: >
+      description: >
         You successfully met the challenge!
         Narrate how it happened.
       prompts:
@@ -40,7 +40,7 @@ cards:
     back: &miss
       name: Miss
       stack: Success Oracle
-      desc: >
+      description: >
         You failed to meet the challenge!
         Narrate how it happened.
       prompts:

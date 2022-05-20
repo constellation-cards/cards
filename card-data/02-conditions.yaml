@@ -19,7 +19,7 @@ cards:
       name: Condition Cards
       stack: Core Rules
       backgroundImage: condition
-      desc: >
+      description: >
         You've been affected by injury, delirium, debts, magical curses, or other problems.
 
         You can take a condition to get a hit. Describe how. Players who challenge you can suggest conditions to meet it.
@@ -39,7 +39,7 @@ cards:
       name: Condition Examples
       stack: Core Rules
       backgroundImage: condition
-      desc: >
+      description: >
         Conditions are a way to achieve success at a cost.
         You can use conditions in many ways.
       prompts:
@@ -53,7 +53,7 @@ cards:
   - front:
       <<: *tfront
       name: Hurt
-      desc: >
+      description: >
         //"Ow! Watch who you carve up with that thing!" -- Basler
         
         You've been bloodied, bruised, stunned, or suffered some other
@@ -73,7 +73,7 @@ cards:
     back:
       <<: *tback
       name: Wounded
-      desc: >
+      description: >
         //"It's...just a scratch..." -- Emory
         
         You've been seriously injured. You might pass out if you aren't helped soon.
@@ -94,7 +94,7 @@ cards:
   - front:
       <<: *tfront
       name: Weakened
-      desc: >
+      description: >
         //"This forest goes on forever, Woody. Can we just stop a moment?" -- Tana
         
         Your body is trying to keep itself going, but is under attack or is being deprived.
@@ -114,7 +114,7 @@ cards:
     back:
       <<: *tback
       name: Exhausted
-      desc: >
+      description: >
         //"The leaf dragon's toxin got me... Sorry..." -- Woody
         
         Your body is out of resources. You pushed yourself to a breaking point.
@@ -135,7 +135,7 @@ cards:
   - front:
       <<: *tfront
       name: Obliged
-      desc: >
+      description: >
         //"We will deal with the brigands, your highness." -- Emory
 
         You have a heavy responsibility, and someone is watching to make sure you uphold it.
@@ -154,7 +154,7 @@ cards:
     back:
       <<: *tback
       name: Indebted
-      desc: >
+      description: >
         //"I kinda told the thieves' guild I'd take care of something" -- Basler
         
         You have significant debts that demand your time or attention.
@@ -176,7 +176,7 @@ cards:
   - front:
       <<: *tfront
       name: Wanted
-      desc: >
+      description: >
         //"I think they saw us." -- Tana
         
         Someone or something powerful or dangerous is seeking you out,
@@ -196,7 +196,7 @@ cards:
     back:
       <<: *tback
       name: Pursued
-      desc: >
+      description: >
         //"They definitely saw us!" -- Basler
         
         You are being actively hunted, by someone or something that wishes you ill.
@@ -216,7 +216,7 @@ cards:
   - front:
       <<: *tfront
       name: Magicked
-      desc: >
+      description: >
         //"Be careful. If anything in the forest looks edible, it's a faerie trap" -- Woody
         
         A spell or other supernatural power is affecting you.
@@ -235,7 +235,7 @@ cards:
     back:
       <<: *tback
       name: Cursed
-      desc: >
+      description: >
         //"That berry was delicious. Hey, who are all of you?" -- Emory
         
         A powerful and baneful magic has you in its grip.
@@ -256,7 +256,7 @@ cards:
   - front:
       <<: *tfront
       name: Altered
-      desc: >
+      description: >
         //"Don't let them peck you, or you'll croak with the voice of the Raven God" -- Woody
         
         Powerful magic has physically changed your appearance or abilities.
@@ -276,7 +276,7 @@ cards:
     back:
       <<: *tback
       name: Transformed
-      desc: >
+      description: >
         //"Hey, that raven looks familiar... Basler?!" -- Tana
         
         You've been physically remade into something new by powerful magic.
@@ -296,7 +296,7 @@ cards:
   - front:
       <<: *tfront
       name: Undergeared
-      desc: >
+      description: >
         //"This is the last of our fresh water." -- Woody
         
         Vital gear has been damaged, or resources are running low.
@@ -316,7 +316,7 @@ cards:
     back:
       <<: *tback
       name: Ungeared
-      desc: >
+      description: >
         //"The flood washed away our campsite! Now what?" -- Basler
         
         Your gear has been broken, lost, or taken,
@@ -337,7 +337,7 @@ cards:
   - front:
       <<: *tfront
       name: Hindered
-      desc: >
+      description: >
         //"This arm is useless for drawing a bow right now." -- Woody
         
         Your body, mind, or senses are in temporary disorder.
@@ -358,7 +358,7 @@ cards:
     back:
       <<: *tback
       name: Impeded
-      desc: >
+      description: >
         //"I can't feel the grimoire! I can't feel ANY magic!" -- Tana
         
         A sense or faculty you normally depend on has been temporarily lost.

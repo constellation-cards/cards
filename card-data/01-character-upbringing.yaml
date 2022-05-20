@@ -16,7 +16,7 @@ cards:
   - front: &Cosmopolitan
       <<: *tfront
       name: Cosmopolitan
-      desc: >
+      description: >
         //"The clear skies, the lure of the open road, it's perfect!" -- Tana
 
         You've lived your life among people from all over.
@@ -32,7 +32,7 @@ cards:
     back:
       <<: *tback
       name: Cosmopolitan
-      desc: >
+      description: >
         //"Do these wagon wheels fall off often?" -- Emory
 
         It's possible to mistake your breadth of experience for depth,
@@ -47,7 +47,7 @@ cards:
   - front: &Industrious
       <<: *tfront
       name: Industrious
-      desc: >
+      description: >
         //"Take a deep breath of that farm air!" -- Tana
 
         You grew up among farmers, trappers, city laborers,
@@ -64,7 +64,7 @@ cards:
     back:
       <<: *tback
       name: Industrious
-      desc: >
+      description: >
         //"Smells like cow breakfast" -- Basler
 
         Not everyone appreciates the necessity of hard work.
@@ -78,7 +78,7 @@ cards:
   - front: &Insular
       <<: *tfront
       name: Insular
-      desc: >
+      description: >
         //"This is all very different from the cloister" -- Emory
 
         You grew up secluded from the rest of the world.
@@ -94,7 +94,7 @@ cards:
     back:
       <<: *tback
       name: Insular
-      desc: >
+      description: >
         //"Everything's different out here. That's why it's called a cloister" -- Basler
 
         Your early life didn't prepare you for the sheer
@@ -109,7 +109,7 @@ cards:
   - front: &Mercantile
       <<: *tfront
       name: Mercantile
-      desc: >
+      description: >
         //"Welcome to the Labri Market! You can find anything here." -- Basler
 
         You grew up among those who made their living through trade.
@@ -127,7 +127,7 @@ cards:
     back:
       <<: *tback
       name: Mercantile
-      desc: >
+      description: >
         //"...For the right price." -- Basler
 
         Not everything can be reduced to a simple transaction,
@@ -141,7 +141,7 @@ cards:
   - front: &Solitary
       <<: *tfront
       name: Solitary
-      desc: >
+      description: >
         //"I got this, leave me alone" -- Woody
 
         For much of your life, you've been on your own.
@@ -157,7 +157,7 @@ cards:
     back:
       <<: *tback
       name: Solitary
-      desc: >
+      description: >
         //"You've left yourself alone too long" -- Tana
 
         Without experiencing what other people in your life
@@ -171,7 +171,7 @@ cards:
   - front: &Strict
       <<: *tfront
       name: Strict
-      desc: >
+      description: >
         //"Knights should be glorious champions of honor!" -- Emory
 
         You knew from a young age that there's a right and wrong way to do things.
@@ -187,7 +187,7 @@ cards:
     back:
       <<: *tback
       name: Strict
-      desc: >
+      description: >
         //"As opposed to ironclad thugs lording it over the peasants?" -- Basler
 
         While committing to a way of life gives you strength
@@ -201,7 +201,7 @@ cards:
   - front: &Underclass
       <<: *tfront
       name: Underclass
-      desc: >
+      description: >
         //"Nobody fights for people like us. So we fight for ourselves." -- Basler
         
         You grew up among people who were neglected or rejected
@@ -217,7 +217,7 @@ cards:
     back:
       <<: *tback
       name: Underclass
-      desc: >
+      description: >
         //"When everyone hates you, it's hard not to hate them back." -- Basler
 
         Sometimes, circumstances push people to a breaking point.
@@ -230,7 +230,7 @@ cards:
   - front: &Unfettered
       <<: *tfront
       name: Unfettered
-      desc: >
+      description: >
         //"As a princess, I had power. As a ranger, I have freedom." -- Woody
         
         Whether you were a scion of privilege,
@@ -247,7 +247,7 @@ cards:
     back:
       <<: *tback
       name: Unfettered
-      desc: >
+      description: >
         //"Those who go their own way often find the path lonely." -- Emory
 
         Rules aren't always made to be broken.

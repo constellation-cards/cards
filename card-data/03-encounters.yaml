@@ -15,7 +15,7 @@ cards:
   - front: &Armored
       <<: *tfront
       name: Armored
-      desc: >
+      description: >
         //"My daggers bounced off that plate mail! What now?" -- Basler
         
         This encounter includes something important that is heavily defended.
@@ -35,7 +35,7 @@ cards:
     back:
       <<: *tback
       name: Armored
-      desc: >
+      description: >
         //"You know what metal does? Heats up. Fireball!" -- Tana
         
         Every armor has a weakness or comes at a cost,
@@ -54,7 +54,7 @@ cards:
   - front: &Base
       <<: *tfront
       name: Base
-      desc: >
+      description: >
         //"Aheheh.. We come in peace?" -- Basler
         
         The encounter includes a place where creatures stay for a common purpose.
@@ -73,7 +73,7 @@ cards:
     back:
       <<: *tback
       name: Base
-      desc: >
+      description: >
         //"Next time, I'll let my sword do the talking." -- Emory
         
         While Bases can be big and imposing,
@@ -91,7 +91,7 @@ cards:
   - front: &Diabolical
       <<: *tfront
       name: Diabolical
-      desc: >
+      description: >
         //"Back, foul fiend! Light will overcome you!" -- Emory
         
         A Diabolical encounter has the touch of evil.
@@ -109,7 +109,7 @@ cards:
     back:
       <<: *tback
       name: Diabolical
-      desc: >
+      description: >
         //"Basler, stop cringing. He's not talking about you." -- Woody
         
         Evil hasn't won, though it keeps trying.
@@ -128,7 +128,7 @@ cards:
   - front: &Elemental
       <<: *tfront
       name: Elemental
-      desc: >
+      description: >
         //"Earth sprites. They have the ore we seek." -- Tana
         
         This encounter involves powerful elemental forces.
@@ -148,7 +148,7 @@ cards:
     back:
       <<: *tback
       name: Elemental
-      desc: >
+      description: >
         //"They had some nice gemstones too!" -- Basler
         
         The elements represent a complex system with rules
@@ -169,7 +169,7 @@ cards:
   - front: &Flying
       <<: *tfront
       name: Flying
-      desc: >
+      description: >
         //"Did something just swoop overhead?" -- Emory
         
         This encounter includes an important aspect that can fly
@@ -191,7 +191,7 @@ cards:
     back:
       <<: *tback
       name: Flying
-      desc: >
+      description: >
         //"Meet my best girl, Annette! A net, get it?" -- Basler
       
         Wings require lots of energy to sustain flight, and are often fragile.
@@ -210,7 +210,7 @@ cards:
   - front: &Gang
       <<: *tfront
       name: Gang
-      desc: >
+      description: >
         //"They outnumber us 5 to 1, folks!" -- Basler
         
         This encounter includes a group of people or creatures bound
@@ -231,7 +231,7 @@ cards:
     back:
       <<: *tback
       name: Gang
-      desc: >
+      description: >
         //"Sounds like fair odds to me. Have at you!" -- Emory
         
         The strength of a gang is in its numbers. Dealing with individual members
@@ -251,7 +251,7 @@ cards:
   - front: &Hybrid
       <<: *tfront
       name: Hybrid
-      desc: >
+      description: >
         //"A Gryphon. The heraldic symbol of my kingdom. Majestic!" -- Emory
 
         A Hybrid being is made up of two or more things, not always living.
@@ -270,7 +270,7 @@ cards:
     back:
       <<: *tback
       name: Hybrid
-      desc: >
+      description: >
         //"That thing was terrifying! Your kingdom is messed up!" -- Basler
         
         Not every hybrid has a perfect command of its own nature.
@@ -285,7 +285,7 @@ cards:
   - front: &Large
       <<: *tfront
       name: Large
-      desc: >
+      description: >
         //"The bigger they are, the harder they fall!" -- Tana
         
         This encounter includes something of enormous size.
@@ -303,7 +303,7 @@ cards:
     back:
       <<: *tback
       name: Large
-      desc: >
+      description: >
         //"Just as long as it doesn't fall on us." -- Basler
         
         You may have trouble engaging with a Large encounter
@@ -322,7 +322,7 @@ cards:
   - front: &Monstrous
       <<: *tfront
       name: Monstrous
-      desc: >
+      description: >
         //"That ain't no ordinary wolf, folks.." -- Basler
         
         Monstrous threats are altered forms of the familiar.
@@ -344,7 +344,7 @@ cards:
     back:
       <<: *tback
       name: Monstrous
-      desc: >
+      description: >
         //"Whoever corrupted this creature will pay. Let's press on." -- Woody
         
         A Monstrous threat is powered by its rage or aggression, but
@@ -364,7 +364,7 @@ cards:
   - front: &Notorious
       <<: *tfront
       name: Notorious
-      desc: >
+      description: >
         //"That's Gretamaw, the Beaked Butcher!" -- Basler
         
         This encounter includes someone or something that bards sing about.
@@ -385,7 +385,7 @@ cards:
     back:
       <<: *tback
       name: Notorious
-      desc: >
+      description: >
         //"Save the beak. We need it to claim the reward!" -- Basler
         
         Fame has its price.
@@ -408,7 +408,7 @@ cards:
   - front: &Portentous
       <<: *tfront
       name: Portentous
-      desc: >
+      description: >
         //"Where are all those crows going?" -- Tana
 
         This encounter foreshadows something important.
@@ -427,7 +427,7 @@ cards:
     back:
       <<: *tback
       name: Portentous
-      desc: >
+      description: >
         //"They're going the same way we are. Come on." -- Woody
         
         The Portentous is the first step on a larger road.
@@ -443,7 +443,7 @@ cards:
   - front: &Spectral
       <<: *tfront
       name: Spectral
-      desc: >
+      description: >
         //"My arrows go right through it." -- Woody
 
         This encounter includes something ghostly or purely spiritual.
@@ -464,7 +464,7 @@ cards:
     back:
       <<: *tback
       name: Spectral
-      desc: >
+      description: >
         //"I'll have a magic circle up in a moment!" -- Tana
 
         Spectral beings came to the waking world for a reason,
@@ -483,7 +483,7 @@ cards:
   - front: &Tense
       <<: *tfront
       name: Tense
-      desc: >
+      description: >
         //"Deep breaths. Stay calm. Show them we're friends." -- Tana
 
         The encounter includes a highly charged situation that affects
@@ -504,7 +504,7 @@ cards:
     back:
       <<: *tback
       name: Tense
-      desc: >
+      description: >
         //"You mean the real villain all this time was...?!" -- Emory
         
         If you discover the reason for a Tense situation, you
@@ -525,7 +525,7 @@ cards:
   - front: &Toxic
       <<: *tfront
       name: Toxic
-      desc: >
+      description: >
         //"Don't let it touch you! Your skin will rot away!" -- Woody
 
         This encounter includes something that can poison you.
@@ -546,7 +546,7 @@ cards:
     back:
       <<: *tback
       name: Toxic
-      desc: >
+      description: >
         //"My arrows can fly farther than its spit." -- Woody
 
         Poison is not selective. It will harm anyone, friend or foe.
@@ -566,7 +566,7 @@ cards:
   - front: &Undead
       <<: *tfront
       name: Undead
-      desc: >
+      description: >
         //"This unholy abomination will fall!" -- Emory
 
         Necromancy, curses, or strange phenomena
@@ -587,7 +587,7 @@ cards:
     back:
       <<: *tback
       name: Undead
-      desc: >
+      description: >
         //"Not so much fell as fell apart..." -- Basler
 
         Being sustained by dark magic, the undead are equally vulnerable to it.

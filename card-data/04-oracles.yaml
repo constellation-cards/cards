@@ -7,7 +7,7 @@ templates:
       name: Emotion
       backgroundImage: help-circle.png
       stack: Emotion Oracle
-      desc: >
+      description: >
         Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.
         
         Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.
@@ -22,7 +22,7 @@ cards:
     back:
       <<: *emotion-revealed
       name: Ecstacy
-      desc: >
+      description: >
         Ecstacy, Joy, or Serenity.
         
         With Vigilance: yields Optimism.
@@ -32,7 +32,7 @@ cards:
     back:
       <<: *emotion-revealed
       name: Admiration
-      desc: >
+      description: >
         Admiration, Trust, or Acceptance.
         
         With Ecstacy: yields Love.
@@ -42,7 +42,7 @@ cards:
     back:
       <<: *emotion-revealed
       name: Terror
-      desc: >
+      description: >
         Terror, Fear, or Apprehension.
         
         With Admiration: yields Submission.
@@ -52,7 +52,7 @@ cards:
     back:
       <<: *emotion-revealed
       name: Amazement
-      desc: >
+      description: >
         Amazement, Surprise, or Distraction.
         
         With Terror: yields Awe.
@@ -62,7 +62,7 @@ cards:
     back:
       <<: *emotion-revealed
       name: Grief
-      desc: >
+      description: >
         Grief, Sadness, or Pensiveness.
         
         With Amazement: yields Disapproval.
@@ -72,7 +72,7 @@ cards:
     back:
       <<: *emotion-revealed
       name: Loathing
-      desc: >
+      description: >
         Loathing, Disgust, or Boredom.
         
         With Grief: yields Remorse.
@@ -82,7 +82,7 @@ cards:
     back:
       <<: *emotion-revealed
       name: Rage
-      desc: >
+      description: >
         Rage, Anger, or Annoyance.
         
         With Loathing: yields Contempt.
@@ -92,7 +92,7 @@ cards:
     back:
       <<: *emotion-revealed
       name: Vigilance
-      desc: >
+      description: >
         Vigilance, Anticipation, or Interest.
         
         With Rage: yields Aggressiveness.

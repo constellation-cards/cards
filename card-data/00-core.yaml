@@ -13,7 +13,7 @@ templates:
       stack: Core Rules (Crisis)
   - template: &agendaback
       <<: *agendafront
-      desc: >
+      description: >
         During play, you can speak from one of several agendas.
 
         These agendas can be assigned individually to several people,
@@ -31,7 +31,7 @@ cards:
       rule: Whoever plays this card is a principal. Flip for additional rules.
     front:
       <<: *principal
-      desc: >
+      description: >
         You get to create and play a Principal Character (PC),
         one of the protagonists of the story.
 
@@ -55,7 +55,7 @@ cards:
       rule: Whoever plays this card is the facilitator. Flip for additional rules.
     front:
       <<: *facilitator
-      desc: >
+      description: >
         Players in the spotlight are the focus of narration.
         We're asking them for an action that pushes the scene forward,
         and shining the spotlight until they make one.
@@ -79,7 +79,7 @@ cards:
       rule: Whoever plays this card is the lorekeeper. Flip for additional rules.
     front:
       <<: *lorekeeper
-      desc: >
+      description: >
         Your job is to establish the history, setting,
         and canon of the world in which the game happens.
 
@@ -103,7 +103,7 @@ cards:
       rule: Whoever plays this card is the referee. Flip for additional rules.
     front:
       <<: *referee
-      desc: >
+      description: >
         Your job is to adjudicate questions about the rules of the game,
         and to make changes to the rules with the group's consent.
         Any player can suggest how to handle a rule, but you have the final say.
@@ -122,7 +122,7 @@ cards:
       rule: Whoever plays this card is the storyteller. Flip for additional rules.
     front:
       <<: *storyteller
-      desc: >
+      description: >
         The Principal Characters (PCs) are the focus of the game.
         The game also has Ensemble Characters (ECs),
         sometimes called Non-Player Characters (NPCs).
@@ -146,7 +146,7 @@ cards:
       rule: Flip for additional rules.
     front:
       <<: *challenges
-      desc: >
+      description: >
         Any player may challenge a PC's action if failure is likely
         and success or failure are both interesting for the story.
 
@@ -164,7 +164,7 @@ cards:
         - You're confronting an emotionally fraught situation where harm is possible
     back:
       <<: *challenges
-      desc: >
+      description: >
         Challenges follow the principle of "say yes or roll the dice".
 
         Use challenges to increase or decrease the difficulty of a situation.
@@ -182,7 +182,7 @@ cards:
       <<: *template
       name: X-Card
       img: x.png
-      desc: >
+      description: >
         Start the game by reading this text aloud:
 
         "I'd like your help. Your help to make this game fun for everyone.
@@ -205,7 +205,7 @@ cards:
       rule: Define the scope of the crisis, and flip this card
     front:
       <<: *uncertain
-      desc: >
+      description: >
         Some situations cannot be solved by skill or virtue, but only good fortune.
 
         When you encounter such a crisis, decide what it would take to escape it,
@@ -216,7 +216,7 @@ cards:
         - Entreating with capricious spirits or divinities
     back:
       <<: *uncertain
-      desc: >
+      description: >
         You may not flip any cards in front of you (e.g. Character cards) to generate hits.
 
         You may flip shared cards (e.g. Plot cards)
@@ -228,7 +228,7 @@ cards:
       rule: Define the scope of the crisis, and flip this card
     front:
       <<: *gauntlet
-      desc: >
+      description: >
         Some situations are grueling and exhausting, wearing down your reserves
         faster than you can recover. Sooner or later, something has to give.
 
@@ -240,7 +240,7 @@ cards:
         - An extended and grueling magical ritual
     back:
       <<: *gauntlet
-      desc: >
+      description: >
         No card in front of you (e.g. Character cards)
         may be flipped more than once to generate a hit.
 
@@ -253,7 +253,7 @@ cards:
       rule: Define the scope of the crisis, and flip this card
     front:
       <<: *overwhelming
-      desc: >
+      description: >
         Some situations will upset a character's mental equilibrium,
         or present a challenge so daunting that they aren't prepared to handle it immediately.
         Ultimately, though, the characters may rally and prevail.
@@ -266,7 +266,7 @@ cards:
         - Confrontation with divine forces
     back:
       <<: *overwhelming
-      desc: >
+      description: >
         Immediately flip all Character cards in front of all players to their back side.
 
         Cards may be flipped back and used in the usual way from then on.

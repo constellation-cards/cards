@@ -50,13 +50,7 @@ function extractStacks(data: any): ConstellationCardStack[] {
 }
 
 function extractFace(data: any): ConstellationCardFace {
-    return mergeRight(faceTemplate, {
-        name: data.name,
-        backgroundImage: data.backgroundImage,
-        description: data.desc,
-        prompts: data.prompts,
-        rule: data.rule
-    })
+    return mergeRight(faceTemplate, data)
 }
 
 function extractCards(data: any): ConstellationCard[] {
@@ -106,4 +100,4 @@ const data = readAllFiles(filePaths)
 // TODO: add cards to decks & stacks
 // TODO: add deck & stack IDs to cards
 
-console.log(JSON.stringify(data, null, 2))
+fs.writeFileSync("cards.json", JSON.stringify(data, null, 2), 'utf8')

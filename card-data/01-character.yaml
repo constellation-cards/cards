@@ -3,7 +3,7 @@ cards:
       name: Character Cards
       stack: Core Rules
       backgroundImage: character
-      desc: >
+      description: >
         Cards with this icon are character cards.
 
         To create a new PC, pick three cards from three different categories,
