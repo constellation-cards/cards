@@ -1,7 +1,7 @@
 import fs from 'fs'
 import yaml from 'js-yaml'
 import path from 'path'
-import { evolve, filter, map, mergeRight, pick } from 'ramda'
+import { filter, flatten, map, mergeRight, pluck } from 'ramda'
 
 import { ConstellationCard, ConstellationCardDeck, ConstellationCardFace, ConstellationCardStack } from "../index"
 
@@ -68,13 +68,22 @@ function extractCards(data: any): ConstellationCard[] {
     , data)
 }
 
-function readOneFile(filePath: string): any {
+function readOneFile(filePath: string) {
     const content = fs.readFileSync(filePath, 'utf8')
     const data = yaml.load(content) as YamlData
     return {
         decks: extractDecks(data.decks || []),
         stacks: extractStacks(data.stacks || []),
         cards: extractCards(data.cards || [])
+    }
+}
+
+function readAllFiles(filePaths: string[]) {
+    const records = map(readOneFile, filePaths)
+    return {
+        decks: flatten(pluck("decks", records)),
+        stacks: flatten(pluck("stacks", records)),
+        cards: flatten(pluck("cards", records)),
     }
 }
 
@@ -90,7 +99,11 @@ function cardFiles(): string[] {
 }
 
 const filePaths = cardFiles()
-filePaths.forEach(filePath => {
-    const data = readOneFile(filePath)
-    console.log(JSON.stringify(data, null, 2))
-})
+const data = readAllFiles(filePaths)
+
+// TODO: add decks & stacks to data files
+// TODO: add IDs to all objects
+// TODO: add cards to decks & stacks
+// TODO: add deck & stack IDs to cards
+
+console.log(JSON.stringify(data, null, 2))
