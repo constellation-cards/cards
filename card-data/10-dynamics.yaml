@@ -9,13 +9,13 @@ presets:
       - stack: City (Neighborhood)
         quantity: 1
         flipRule: random
-      - stack: City (Neighborhood)
+      - stack: City (Dynamic)
         quantity: 1
         flipRule: random
       - stack: City (Neighborhood)
         quantity: 1
         flipRule: random
-      - stack: City (Neighborhood)
+      - stack: City (Dynamic)
         quantity: 1
         flipRule: random
       - stack: City (Neighborhood)
