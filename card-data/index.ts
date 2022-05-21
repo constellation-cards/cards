@@ -14,13 +14,13 @@ interface YamlData {
 }
 
 const deckTemplate: ConstellationCardDeck = {
-    id: "",
+    uid: "",
     name: "",
     cards: []
 }
 
 const stackTemplate: ConstellationCardStack = {
-    id: "",
+    uid: "",
     name: "",
     icons: [],
     cards: []
@@ -35,7 +35,7 @@ const faceTemplate: ConstellationCardFace = {
 }
 
 const cardTemplate: ConstellationCard = {
-    id: "",
+    uid: "",
     deck: "",
     stack: "",
     front: {...faceTemplate},
@@ -103,7 +103,7 @@ function cardFiles(): string[] {
 }
 
 function addIds(objects: any[]): any[] {
-    return map((obj: any) => assoc("id", idForObject(obj), obj), objects)
+    return map((obj: any) => assoc("uid", idForObject(obj), obj), objects)
 }
 
 function addIdsToEverything(data: any) {
@@ -130,21 +130,21 @@ for (let card of dataWithIds.cards) {
     if (card.deck) {
         let foundDeck = deckIndex[card.deck]
         if (foundDeck) {
-            foundDeck.cards = append(card.id, foundDeck.cards)
-            card.deck = foundDeck.id
+            foundDeck.cards = append(card.uid, foundDeck.cards)
+            card.deck = foundDeck.uid
         }
     }
     if (card.stack) {
         let foundStack = stackIndex[card.stack]
         if (foundStack) {
-            foundStack.cards = append(card.id, foundStack.cards)
-            card.stack = foundStack.id
+            foundStack.cards = append(card.uid, foundStack.cards)
+            card.stack = foundStack.uid
         }
     }
 }
 
 for (let preset of dataWithIds.presets) {
-    preset.sources = map(source => assoc("stack", stackIndex[source.stack]?.id, source), preset.sources || [])
+    preset.sources = map(source => assoc("stack", stackIndex[source.stack]?.uid, source), preset.sources || [])
 }
 
 fs.writeFileSync("cards.json", JSON.stringify(dataWithIds, null, 2), 'utf8')

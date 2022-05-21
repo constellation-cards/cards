@@ -3,7 +3,7 @@ import cardData from "./cards.json";
 /**
  * Many objects have a unique ID, often a database key.
  */
-export type ConstellationCardId<T> = string;
+export type ConstellationCardUid<T> = string;
 
 /**
  * An IMAGE is a reference to an icon or background image.
@@ -18,7 +18,7 @@ export interface ConstellationCardDeck {
   /**
    * The unique ID of this deck
    */
-  id: ConstellationCardId<ConstellationCardDeck>;
+  uid: ConstellationCardUid<ConstellationCardDeck>;
 
   /**
    * The human readable name of this deck, e.g. "CORE"
@@ -28,7 +28,7 @@ export interface ConstellationCardDeck {
   /**
    * All the cards in this deck, by ID
    */
-  cards: ConstellationCardId<ConstellationCard>[];
+  cards: ConstellationCardUid<ConstellationCard>[];
 }
 
 /**
@@ -40,7 +40,7 @@ export interface ConstellationCardStack {
   /**
    * The unique ID of this stack
    */
-  id: ConstellationCardId<ConstellationCardStack>;
+  uid: ConstellationCardUid<ConstellationCardStack>;
 
   /**
    * The human readable name of this stack, e.g. "Core Rules"
@@ -55,7 +55,7 @@ export interface ConstellationCardStack {
   /**
    * All the cards in this stack, by ID
    */
-  cards: ConstellationCardId<ConstellationCard>[];
+  cards: ConstellationCardUid<ConstellationCard>[];
 }
 
 export interface ConstellationCardFace {
@@ -89,17 +89,17 @@ export interface ConstellationCard {
   /**
    * The unique ID of this card
    */
-  id: ConstellationCardId<ConstellationCard>;
+  uid: ConstellationCardUid<ConstellationCard>;
 
   /**
    * All cards belong in a deck, e.g. "CORE"
    */
-  deck: ConstellationCardId<ConstellationCardDeck>;
+  deck: ConstellationCardUid<ConstellationCardDeck>;
 
   /**
    * All cards belong in a stack, e.g. "Character (Focus)"
    */
-  stack: ConstellationCardId<ConstellationCardStack>;
+  stack: ConstellationCardUid<ConstellationCardStack>;
 
   /**
    * Cards have front and back faces
@@ -126,7 +126,7 @@ export enum ConstellationCardPresetFlipRule {
  * When dealing a card into this preset, where does it come from?
  */
 export interface ConstellationCardPresetSource {
-  stack: ConstellationCardId<ConstellationCardStack>;
+  stack: ConstellationCardUid<ConstellationCardStack>;
   quantity: number;
   flipRule: ConstellationCardPresetFlipRule;
 }
