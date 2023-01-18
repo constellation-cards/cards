@@ -1,4 +1,9 @@
-import { getCards, getDecks, getPresets, getStacks } from "./src/library";
+import {
+  getCards,
+  getDecks,
+  getPresets,
+  getStacks
+} from "./src/library";
 import {
   ConstellationCardUid,
   ConstellationCardImage,
@@ -10,6 +15,15 @@ import {
   ConstellationCardPresetSource,
   ConstellationCardPreset,
 } from "./src/types";
+import {
+  CardActionNames,
+  UpsertCardAction,
+  CreateStackAction,
+  DeleteStackAction,
+  RenameStackAction,
+  MoveCardAction,
+  FlipCardAction
+} from "./src/actions"
 
 export {
   getCards,
@@ -25,4 +39,11 @@ export {
   ConstellationCardPresetFlipRule,
   ConstellationCardPresetSource,
   ConstellationCardPreset,
+  CardActionNames,
+  UpsertCardAction,
+  CreateStackAction,
+  DeleteStackAction,
+  RenameStackAction,
+  MoveCardAction,
+  FlipCardAction
 };
