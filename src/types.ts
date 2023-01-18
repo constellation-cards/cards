@@ -30,6 +30,23 @@ export interface ConstellationCardDeck {
 }
 
 /**
+ * Stacks have an owner, either a player or a predefined area
+ */
+export enum ConstellationCardFixedOwner {
+  /**
+   * Shard stacks are visible to all players, cards shown
+   */
+  SHARED = "SHARED",
+
+  /**
+   * Side stacks are visible to all players, cards hidden
+   */
+  SIDE = "SIDE"
+}
+
+export type ConstellationCardOwner = string | ConstellationCardFixedOwner;
+
+/**
  * A STACK is a collection of CARDS that closely share a purpose,
  * e.g. "Character Focus" or "Condition".
  * Multiple DECKS can contribute cards to a single stack.
@@ -44,6 +61,11 @@ export interface ConstellationCardStack {
    * The human readable name of this stack, e.g. "Core Rules"
    */
   name: string;
+
+  /**
+   * The owner for this stack, either a player or a fixed position
+   */
+  owner: ConstellationCardOwner;
 
   /**
    * The list of icons associated with this stack

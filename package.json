@@ -1,6 +1,6 @@
 {
   "name": "@constellation-cards/cards",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Constellation Cards definitions, data, and components",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

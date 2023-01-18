@@ -4,7 +4,7 @@ import yaml from 'js-yaml'
 import path from 'path'
 import { append, assoc, filter, flatten, map, mergeRight, pluck, reduce } from 'ramda'
 
-import { ConstellationCard, ConstellationCardDeck, ConstellationCardFace, ConstellationCardStack } from "../index"
+import { ConstellationCard, ConstellationCardDeck, ConstellationCardFace, ConstellationCardFixedOwner, ConstellationCardStack } from "../src/types"
 
 interface YamlData {
     decks: any[]
@@ -22,6 +22,7 @@ const deckTemplate: ConstellationCardDeck = {
 const stackTemplate: ConstellationCardStack = {
     uid: "",
     name: "",
+    owner: ConstellationCardFixedOwner.SIDE,
     icons: [],
     cards: []
 }
