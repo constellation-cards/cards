@@ -4,7 +4,7 @@ import yaml from 'js-yaml'
 import path from 'path'
 import { append, assoc, filter, flatten, map, mergeRight, pluck, reduce } from 'ramda'
 
-import { ConstellationCard, ConstellationCardDeck, ConstellationCardFace, ConstellationCardFixedOwner, ConstellationCardStack } from "../src/types"
+import { ConstellationCard, ConstellationCardDeck, ConstellationCardFace, ConstellationCardStack } from "../src/types"
 
 interface YamlData {
     decks: any[]
@@ -22,9 +22,9 @@ const deckTemplate: ConstellationCardDeck = {
 const stackTemplate: ConstellationCardStack = {
     uid: "",
     name: "",
-    owner: ConstellationCardFixedOwner.SIDE,
     icons: [],
-    cards: []
+    cards: [],
+    state: null
 }
 
 const faceTemplate: ConstellationCardFace = {
@@ -41,7 +41,8 @@ const cardTemplate: ConstellationCard = {
     stack: "",
     front: {...faceTemplate},
     back: {...faceTemplate},
-    quantity: 1
+    quantity: 1,
+    state: null
 }
 
 function idForObject(obj: any): string {

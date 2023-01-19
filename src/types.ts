@@ -30,28 +30,11 @@ export interface ConstellationCardDeck {
 }
 
 /**
- * Stacks have an owner, either a player or a predefined area
- */
-export enum ConstellationCardFixedOwner {
-  /**
-   * Shard stacks are visible to all players, cards shown
-   */
-  SHARED = "SHARED",
-
-  /**
-   * Side stacks are visible to all players, cards hidden
-   */
-  SIDE = "SIDE"
-}
-
-export type ConstellationCardOwner = string | ConstellationCardFixedOwner;
-
-/**
  * A STACK is a collection of CARDS that closely share a purpose,
  * e.g. "Character Focus" or "Condition".
  * Multiple DECKS can contribute cards to a single stack.
  */
-export interface ConstellationCardStack {
+export interface ConstellationCardStack<T = {} | null> {
   /**
    * The unique ID of this stack
    */
@@ -63,11 +46,6 @@ export interface ConstellationCardStack {
   name: string;
 
   /**
-   * The owner for this stack, either a player or a fixed position
-   */
-  owner: ConstellationCardOwner;
-
-  /**
    * The list of icons associated with this stack
    */
   icons: ConstellationCardImage[];
@@ -76,6 +54,12 @@ export interface ConstellationCardStack {
    * All the cards in this stack, by ID
    */
   cards: ConstellationCardUid<ConstellationCard>[];
+
+  /**
+   * Constellation Card objects can have an optional state,
+   * to hold environment-specific data (e.g. whether a card is flipped)
+   */
+  state: T;
 }
 
 export interface ConstellationCardFace {
@@ -105,7 +89,7 @@ export interface ConstellationCardFace {
   rule: string | undefined;
 }
 
-export interface ConstellationCard {
+export interface ConstellationCard<T = {} | null> {
   /**
    * The unique ID of this card
    */
@@ -131,6 +115,12 @@ export interface ConstellationCard {
    * The stack has a certain number of this card in it
    */
   quantity: number;
+
+  /**
+   * Constellation Card objects can have an optional state,
+   * to hold environment-specific data (e.g. whether a card is flipped)
+   */
+  state: T;
 }
 
 /**

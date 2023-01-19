@@ -1,6 +1,6 @@
 import { CardActionNames, CreateStackAction, DeleteStackAction, FlipCardAction, MoveCardAction, RenameStackAction, UpsertCardAction } from "./src/actions";
 import { getCards, getDecks, getPresets, getStacks } from "./src/library";
-import { ConstellationCard, ConstellationCardDeck, ConstellationCardFace, ConstellationCardFixedOwner, ConstellationCardImage, ConstellationCardOwner, ConstellationCardPreset, ConstellationCardPresetFlipRule, ConstellationCardPresetSource, ConstellationCardStack, ConstellationCardUid } from "./src/types";
+import { ConstellationCard, ConstellationCardDeck, ConstellationCardFace, ConstellationCardImage, ConstellationCardPreset, ConstellationCardPresetFlipRule, ConstellationCardPresetSource, ConstellationCardStack, ConstellationCardUid } from "./src/types";
 
 export {
   getCards,
@@ -10,8 +10,6 @@ export {
   ConstellationCardUid,
   ConstellationCardImage,
   ConstellationCardDeck,
-  ConstellationCardFixedOwner,
-  ConstellationCardOwner,
   ConstellationCardStack,
   ConstellationCardFace,
   ConstellationCard,
