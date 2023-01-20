@@ -16,6 +16,9 @@ templates:
       rule: Flip to reveal an answer
   - template: &emotion-revealed
       stack: Emotion Oracle
+      prompts:
+        - Who in the scene feels this emotion? Who ought to, but does not?
+        - Should this emotion be affirmed, resisted, revealed, or concealed?
       rule: Discard and shuffle into related cards
 cards:
   - front: *emotion-hidden
