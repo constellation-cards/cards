@@ -78,7 +78,7 @@ cards:
       <<: *facilitator
   - template: &lorekeeper
       <<: *agendafront
-      name: The lorekeeper
+      name: The Lorekeeper
       rule: Whoever plays this card is the lorekeeper. Flip for additional rules.
     front:
       <<: *lorekeeper
