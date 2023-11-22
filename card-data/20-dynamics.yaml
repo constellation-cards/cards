@@ -1,0 +1,226 @@
+decks:
+  - name: CITY
+stacks:
+  - name: City (Dynamic)
+presets:
+  - name: New City
+    description: Create a new city
+    sources:
+      - stack: City (Neighborhood)
+        quantity: 1
+        flipRule: random
+      - stack: City (Dynamic)
+        quantity: 1
+        flipRule: random
+      - stack: City (Neighborhood)
+        quantity: 1
+        flipRule: random
+      - stack: City (Dynamic)
+        quantity: 1
+        flipRule: random
+      - stack: City (Neighborhood)
+        quantity: 1
+        flipRule: random
+templates:
+  - template: &dynamic-front
+      deck: CITY
+      stack: City (Dynamic)
+      rule: Flip to see the unstable version of this dynamic
+  - template: &dynamic-back
+      stack: City (Dynamic)
+      rule: Flip to see the stable version of this dynamic
+cards:
+  - front: &Artistic
+      <<: *dynamic-front
+      name: Artistic
+      description: >
+        Two neighborhoods are connected via artistic expression.
+        One may house artists who draw inspiration or receive funding
+        from the other. Artists of different traditions may cross-train,
+        creating a new and unique tradition.
+      prompts:
+        - What forms of art exist in the city?
+        - How does the city view those who make art?
+        - Who is interested in collecting or commissioning art?
+    back:
+      <<: *dynamic-back
+      name: Artistic
+      description: >
+        Two neighborhoods are connected via artistic expression.
+        One's artists may be exploited by patrons from the other,
+        or the artists are improperly borrowing from a neighboring culture.
+        Two neighborhoods may have competing
+        cultural and artistic traditions.
+      prompts:
+        - What forms of art exist in the city?
+        - How does the city view those who make art?
+        - Who is interested in collecting or commissioning art?
+  - front: &Criminal
+      <<: *dynamic-front
+      name: Criminal
+      description: >
+        Two neighborhoods are connected via criminal activity,
+        from petty theft and pickpocketing to smuggling to murder.
+        Organized crime cartels, thieves' guilds, etc. from one
+        neighborhood may prey on the other. Or legitimate business
+        in one is being propped up by criminal activity in the other.
+      prompts:
+        - What kinds of laws exist? Are they fair?
+        - Who enforces those laws? How strictly?
+        - How does the public view the criminal element?
+    back:
+      <<: *dynamic-back
+      name: Criminal
+      description: >
+        Two neighborhoods are connected via criminal activity,
+        From petty theft and pickpocketing to smuggling to murder.
+        Gang wars between rival factions, a single criminal mastermind,
+        or open corruption are all possibilities.
+      prompts:
+        - What kinds of laws exist? Are they fair?
+        - Who enforces those laws? How strictly?
+        - How does the public view the criminal element?
+  - front: &Commercial
+      <<: *dynamic-front
+      name: Commercial
+      description: >
+        People from one neighborhood buy or sell
+        goods and services to the other.
+        Advertising, word of mouth, or tradition might
+        entice new visitors.
+        Supply and demand are roughly balanced,
+        or the market is adaptable enough to cope
+        when they aren't.
+      prompts:
+        - Who pays whom, and for what?
+        - Who benefits from the arrangement? Who suffers?
+        - Who would like a piece of the action?
+    back:
+      <<: *dynamic-back
+      name: Commercial
+      description: >
+        People from one neighborhood in the dynamic
+        buy or sell goods and services to the other.
+        Market prices are volatile, or there may be
+        an imbalance in supply vs. demand.
+      prompts:
+        - Who gains from the instability? Who loses?
+        - Where else can supply, demand, or labor be found instead?
+        - How are people coping?
+  - front: &Esoteric
+      <<: *dynamic-front
+      name: Esoteric
+      description: >
+        Two neighborhoods interact through arcane goods and services.
+        One may supply the other's needs, or contain a natural source for something vital or valuable.
+        Or both may contribute ingredients to complete a final thing.
+      prompts:
+        - What kinds of things are exchanged?
+        - What kind of people work with them?
+        - How does the city view such people?
+    back:
+      <<: *dynamic-back
+      name: Esoteric
+      description: >
+        Two neighborhoods interact through arcane goods and services.
+        Although one needs what the other has, the exchange
+        is threatened by mistrust, scarcity, or the volatility of
+        the materials and processes themselves.
+      prompts:
+        - What kinds of things are exchanged?
+        - What kind of people work with them?
+        - How does the city view such people?
+  - front: &External
+      <<: *dynamic-front
+      name: External
+      description: >
+        Two neighborhoods are connected by something happening outside the city.
+        This could be immigration, trade, religious or political action,
+        cultural trends, or something else.
+      prompts:
+        - What is the external?
+        - Is the city importing or exporting it?
+        - Who benefits? Who doesn't?
+    back:
+      <<: *dynamic-back
+      name: External
+      description: >
+        Two neighborhoods are connected by something happening outside the city.
+        Whether people, things, or trends, life in the neighborhoods is being
+        shaken up by it.
+      prompts:
+        - What is the external?
+        - Is the city importing or exporting it?
+        - Who benefits? Who doesn't?
+  - front: &Industrial
+      <<: *dynamic-front
+      name: Industrial
+      description: >
+        Two neighborhoods are connected by the production of goods.
+        One may supply workers and/or raw materials for the other,
+        one may buy what the other makes,
+        or the two may cooperate in other ways.
+      prompts:
+        - What is being made? Processed metals, medicines, tools?
+        - How is it being used? By whom? For what?
+        - Who wants these things? Who doesn't them to be made?
+    back:
+      <<: *dynamic-back
+      name: Industrial
+      description: >
+        Two neighborhoods are connected by the production of goods.
+        Labor disputes, material shortages, sabotage,
+        or technological progress can all make that process unstable.
+      prompts:
+        - What is being made? Processed metals, medicines, tools?
+        - How is it being used? By whom? For what?
+        - Who wants these things? Who doesn't them to be made?
+  - front: &Political
+      <<: *dynamic-front
+      name: Political
+      description: >
+        Two neighborhoods interact via power, influence, and leadership.
+        There is a long-standing arrangement or entrenched leadership
+        keeping things stable. Enough people, or the right people,
+        like things as they are and work to keep it that way.
+      prompts:
+        - Who benefits from the situation? Who suffers?
+        - What keeps the relationship going?
+        - How reluctant are people to acknowledge or confront the situation?
+    back:
+      <<: *dynamic-back
+      name: Political
+      description: >
+        Two neighborhoods interact via influence, and leadership.
+        One might dominate another, depend on another for legitimacy,
+        or prioritize or ignore the other.
+        When the corrupt edifice falls,
+        who will be beneath it when it finally falls?
+      prompts:
+        - Who is agitating for change? Who holds the line?
+        - What outside influences are present? Who do they support?
+        - Is the struggle physically peaceful or violent?
+  - front: &Social
+      <<: *dynamic-front
+      name: Social
+      description: >
+        Two neighborhoods play off each other via fashion or pop culture.
+        The trends of the moment may shift between the two,
+        or the tension between them may be what creates the magic.
+        The results are disseminated through parties, performances, and gossip.
+      prompts:
+        - What's in fashion now? What is out now?
+        - How is fashion expressed, e.g. clothes, jewelry, music, tattoos?
+        - Who are the trendsetters? Who are the rebels?
+    back:
+      <<: *dynamic-back
+      name: Social
+      description: >
+        Two neighborhoods play off each other via fashion or pop culture.
+        One may be trying to crush the other's creative efforts,
+        or upstage the other in increasingly desperate ways.
+        The results may be soulless, gaudy, or seen as needlessly aggressive.
+      prompts:
+        - What's in fashion now? What is out now?
+        - How is fashion expressed, e.g. clothes, jewelry, music, tattoos?
+        - Who are the trendsetters? Who are the rebels?

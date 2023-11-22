@@ -1,0 +1,431 @@
+decks:
+  - name: ENCOUNTER
+stacks:
+  - name: Encounter
+    icons:
+      - alert-circle
+presets:
+  - name: New Encounter
+    description: Create a new encounter
+    sources:
+      - stack: Encounter
+        quantity: 2
+        flipRule: front
+      - stack: Emotion Oracle
+        quantity: 1
+        flipRule: back
+templates:
+  - template: &template
+      deck: ENCOUNTER
+      stack: Encounter
+  - template: &tfront
+      <<: *template
+      rule: Flip to see ways to meet the encounter's challenges.
+  - template: &tback
+      <<: *template
+      rule: Flip to see ways the encounter challenges the PCs.
+cards:
+  - front: &Armored
+      <<: *tfront
+      name: Armored
+      description: >
+        //"My daggers bounced off that plate mail! What now?" -- Basler
+
+        This encounter includes something important that is heavily defended.
+        This could mean body armor of leather or metal,
+        hardened barriers of stone, or wood,
+        a protective aura of magic, a divine blessing,
+        and more.
+      prompts:
+        - Ignore harm from inadequate attacks
+        - Destroy weaker things that strike it or are struck by it
+        - Stand in defense of allies
+    back:
+      <<: *tback
+      name: Armored
+      description: >
+        //"You know what metal does? Heats up. Fireball!" -- Tana
+
+        Every armor has a weakness or comes at a cost,
+        like making someone slower or something heavier.
+        Not every armor's weakness is obvious, and finding it may be difficult.
+      prompts:
+        - Those protected have limited mobility and senses
+        - Weakness to specific damage types, e.g. lightning
+        - Useless if penetrated or lost
+  - front: &Base
+      <<: *tfront
+      name: Base
+      description: >
+        //"That's a big castle..." -- Basler
+
+        A Base can be a temporary encampment, an outpost,
+        a secret headquarters, a wild animal's den, or some other protected space.
+        You might need to find something specific,
+        get in or out, or confront the occupants.
+      prompts:
+        - Bases can have numerous occupants
+        - Traps, labyrinthine structure, or other clever preparations
+        - Ways to cut off escape routes or confine interlopers
+    back:
+      <<: *tback
+      name: Base
+      description: >
+        //"The tyrant king doesn't know about these secret tunnels" -- Emory
+
+        While Bases can be big and imposing,
+        their nature can work against their occupants.
+        The bigger the Base, the more likely it is to hold something helpful.
+      prompts:
+        - Contain secrets about the plans and activities of its occupants
+        - Hold resources, weapons, or captives
+        - Include defensible choke points or hiding spots
+  - front: &Diabolical
+      <<: *tfront
+      name: Diabolical
+      description: >
+        //"Back, foul fiend! Light will overcome you!" -- Emory
+
+        A Diabolical encounter has the touch of evil.
+        An actual summoned demon, a possessed victim,
+        or a dark and malevolent force are all Diabolic.
+      prompts:
+        - Seek to corrupt or influence the vulnerable
+        - Exploit moral weaknesses or dark secrets
+        - Expose its true nature and hellish powers
+    back:
+      <<: *tback
+      name: Diabolical
+      description: >
+        //"Basler, stop cringing. He's not talking about you." -- Woody
+
+        Evil hasn't won, though it keeps trying.
+        Powers from beyond are bound by their own rules too,
+        and can be defeated accordingly.
+
+        Characters who arm themselves with occult lore or
+        divine blessings may circumvent or neutralize
+        a Diabolical power.
+      prompts:
+        - Be susceptible to folk incantations or rituals
+        - Recoil from the pure of heart
+        - Flee to fight another day
+  - front: &Elemental
+      <<: *tfront
+      name: Elemental
+      description: >
+        //"Earth sprites. They have the ore we seek." -- Tana
+
+        Powerful forces of nature such as volcanoes, storms,
+        as well as elemental entities.
+      prompts:
+        - Create, animate, or manipulate its element in useful or dangerous ways
+        - Change the environment with aspects of its element, such as making rivers
+          of fire or barriers of wind
+        - Counteract an opposing element, such as fire vs. water
+    back:
+      <<: *tback
+      name: Elemental
+      description: >
+        //"They had some nice gemstones too!" -- Basler
+
+        Each element has rules. Water flows.
+        Fire burns, but not without fuel.
+        Some elements can counteract others.
+        These rules can be exploited.
+      prompts:
+        - Be vulnerable to their element's normal vulnerabilities or rules
+        - Require a nearby source of the element
+  - front: &Flying
+      <<: *tfront
+      name: Flying
+      description: >
+        //"Did something just swoop overhead?" -- Emory
+
+        This encounter includes something flying or airborne.
+        Winged creatures, skilled magicians, and floating platforms
+        can ignore earthbound attackers and require effort to reach.
+      prompts:
+        - Strike targets on the ground without risking counterattacks
+        - Move faster than those trapped on the ground, or reach places they can't
+        - See greater distances
+    back:
+      <<: *tback
+      name: Flying
+      description: >
+        //"Meet my best girl, Annette! A net, get it?" -- Basler
+
+        Wings require energy to sustain flight and can be fragile.
+        Magical flight can be counter-spelled.
+        Turbulent air or nets can force flyers down.
+      prompts:
+        - Become entangled, trapped, or confined in ways that negate flight
+        - Be unable to lift heavy loads or fly under difficult conditions
+        - Suffer harm if they fall
+  - front: &Gang
+      <<: *tfront
+      name: Gang
+      description: >
+        //"They outnumber us 5 to 1, folks!" -- Basler
+
+        A group of beings bound together in common purpose.
+        Gangs can be organized, like criminal gangs or military units,
+        or informal groups like angry mobs or animal packs.
+      prompts:
+        - Surround or isolate individuals through strength in numbers
+        - Shout down or bully a lone voice
+        - Bring a variety of skills or resources to bear on a problem
+    back:
+      <<: *tback
+      name: Gang
+      description: >
+        //"Sounds like fair odds to me. Have at you!" -- Emory
+
+        The strength of a gang is in its numbers.
+        Without a strong leader, the gang obeys its collective impulses.
+        Individual members can be isolated and confronted.
+      prompts:
+        - Have competing impulses or mixed sympathies or agendas
+        - Fall apart if a leader is weakened or shamed
+        - Follow a new leader or impulse that better matches its agenda
+  - front: &Hybrid
+      <<: *tfront
+      name: Hybrid
+      description: >
+        //"A Gryphon. The heraldic symbol of my kingdom. Majestic!" -- Emory
+
+        A Hybrid being is made up of two or more things, not always living.
+        Such beings can be part-human (mermaids, harpies),
+        mixed animal (cockatrices, pegasi),
+        shapeshifters (werewolves), or weirder (tree-ogres).
+      prompts:
+        - Use the best of their combined abilities
+        - Use different abilities together in some unique way
+    back:
+      <<: *tback
+      name: Hybrid
+      description: >
+        //"That thing was terrifying! Your kingdom is messed up!" -- Basler
+
+        Not every hybrid has a perfect command of its own nature.
+        Hybrids must also obey the rules of all their component parts.
+      prompts:
+        - Suffer the vulnerabilities of any of their contributing parts
+        - Become confused by conflicting impulses or instincts
+  - front: &Large
+      <<: *tfront
+      name: Large
+      description: >
+        //"The bigger they are, the harder they fall!" -- Tana
+
+        This encounter includes something of enormous size.
+        It might be naturally large, like a dragon or a giant,
+        or have been enlarged by magic or other forces.
+      prompts:
+        - Resist human-scale attacks or effects
+        - Reach or hit an entire area at once
+        - Deal devastating damage to smaller creatures and objects
+    back:
+      <<: *tback
+      name: Large
+      description: >
+        //"Just as long as it doesn't fall on us." -- Basler
+
+        You may have trouble engaging with a Large encounter
+        due to the size difference, but that trouble goes both ways.
+        It can be hard for Large things to perceive or target smaller
+        foes.
+      prompts:
+        - Lose track of small details or targets
+        - Be easily targeted due to its size
+        - Move slowly or clumsily
+  - front: &Monstrous
+      <<: *tfront
+      name: Monstrous
+      description: >
+        //"That ain't no ordinary wolf, folks.." -- Basler
+
+        Monstrous threats are altered forms of the familiar.
+        They are fiercer, more feral, or disturbingly unnatural,
+        the nightmarishly distorted vision of the original.
+      prompts:
+        - Lash out viciously
+        - Use their adaptions to overwhelm the unprepared
+        - Terrify onlookers with their awful nature
+    back:
+      <<: *tback
+      name: Monstrous
+      description: >
+        //"Whoever corrupted this creature will pay. Let's find them." -- Woody
+
+        A Monstrous threat is powered by its rage or aggression, but
+        often lack a sense of self-preservation,
+        fighting relentlessly when others would retreat.
+      prompts:
+        - Lose themselves in their own ferocity
+        - Fall into traps when goaded
+        - Misunderstand those not driven by similar instincts
+  - front: &Notorious
+      <<: *tfront
+      name: Notorious
+      description: >
+        //"That's Gretamaw, the Beaked Butcher!" -- Basler
+
+        A monster whispered of by fearful villagers. A lonely place of power.
+        An artifact of legend, replete with arcane power.
+        A person sung of by the bards.
+        The weight of its reputation or its followers may be as much of a danger as its own power.
+      prompts:
+        - Dominate with their presence
+        - Live up to the legend in a big way
+        - Reveal an unexpected ability
+    back:
+      <<: *tback
+      name: Notorious
+      description: >
+        //"Save the beak. We need it to claim the reward!" -- Basler
+
+        The stories about this encounter might give you
+        clues on how to deal with it. But stories are just that, stories.
+        You might correctly leverage its lore,
+        or look at it with fresh eyes and discover a truth the bards omitted.
+      prompts:
+        - Behave or react predictably
+        - Be less, or other, than the stories say
+        - Be part of another unguessed story
+  - front: &Portentous
+      <<: *tfront
+      name: Portentous
+      description: >
+        //"Where are all those crows going?" -- Tana
+
+        This encounter foreshadows something important.
+        It can be a mystical experience, laden with dreams and prophecy,
+        or just a mundane glimpse into a momentous reality beyond.
+      prompts:
+        - Give a taste of things to come
+        - Force people into hard moral or personal choices
+        - Subtly mingle the mundane and the symbolic or dreamlike
+    back:
+      <<: *tback
+      name: Portentous
+      description: >
+        //"They're going the same way we are. Come on." -- Woody
+
+        The Portentous is the first step on a larger road.
+        It both surprises characters, and prepares them for what is next.
+        If the future cannot be changed, it can be met with eyes open.
+        And you will only know if fate can be defied by trying.
+      prompts:
+        - Reveal an important clue or suggest a strategy
+        - Unlock a hidden strength or personal conviction
+  - front: &Spectral
+      <<: *tfront
+      name: Spectral
+      description: >
+        //"My arrows go right through it." -- Woody
+
+        This encounter includes something ghostly or purely spiritual.
+        Spectral entities might have obligations or passions
+        binding them to the mortal world.
+        They may be frightened, angry, or confused.
+        They might wish to go - or to stay.
+      prompts:
+        - Bypass solid obstacles
+        - Wield morbid magics like chilling touch or possession
+        - Ravenously pursue something the living have that it wants
+    back:
+      <<: *tback
+      name: Spectral
+      description: >
+        //"I'll have a magic circle up in a moment!" -- Tana
+
+        Spectral beings are only visitors in the waking world.
+        Their anchors are tenuous,
+        and they may leave if given what they want
+        or be forced out by those who know how.
+      prompts:
+        - Be weakened or repulsed by warding rituals
+        - Fall prey to their passions
+  - front: &Tense
+      <<: *tfront
+      name: Tense
+      description: >
+        //"Deep breaths. Stay calm. Show them we're friends." -- Tana
+
+        The encounter includes a highly charged situation.
+        One or more parties might be on edge,
+        ready for confrontation with another.
+        Can you navigate it without making everything worse?
+      prompts:
+        - Lash out with ill-considered action
+        - Make bad assessments or assume the worst
+        - Heedlessly run away, often making things worse
+    back:
+      <<: *tback
+      name: Tense
+      description: >
+        //"You mean the real villain all this time was...?!" -- Emory
+
+        If you discover the reason for a Tense situation, you
+        can find a ways to defuse it.
+        You can talk others down if you aren't caught up in the situation yourself.
+      prompts:
+        - Overcome mistrust through negotiation
+        - Reveal facts that counter false assumptions
+        - Make compromises and sacrifices in the name of peace
+  - front: &Toxic
+      <<: *tfront
+      name: Toxic
+      description: >
+        //"Don't let it touch you! Your skin will rot away!" -- Woody
+
+        Venomous creatures, assassins with poisoned blades, 
+        swamp gasses, and many other things can afflict you
+        with sickness. Poisons can be fast acting and deadly, or
+        gradually debilitating.
+      prompts:
+        - Sicken anyone in contact with them
+        - Fend off an attack with the threat of toxin
+        - Spread the toxin to others
+    back:
+      <<: *tback
+      name: Toxic
+      description: >
+        //"My arrows can fly farther than its spit." -- Woody
+
+        Some toxins have antidotes, or may not penetrate some
+        kinds of defense.
+        For example, a snake's fangs might be deflected by armor.
+      prompts:
+        - Inadvertently harm allies, or themselves if they are not immune
+        - Be unable to deliver its poison if you find adequate protection
+        - Fail to harm something or someone with a natural or acquired immunity
+  - front: &Undead
+      <<: *tfront
+      name: Undead
+      description: >
+        //"This unholy abomination will fall!" -- Emory
+
+        Necromancy, curses, or strange phenomena
+        can bring a deceased creature back to a false life.
+        The being is sustained by magic, not biology.
+        Some undead are mindless; others are disturbingly cunning.
+      prompts:
+        - Ignore the frailties of mortal existence
+        - Frighten onlookers with a reminder of mortality
+        - Employ dread powers
+    back:
+      <<: *tback
+      name: Undead
+      description: >
+        //"Not so much fell as fell apart..." -- Basler
+
+        Being sustained by dark magic, the undead are equally vulnerable to it.
+        Many cannot abide holy objects, places, or effects.
+        Others are bound by orders to only guard a certain place,
+        or do a certain thing.
+      prompts:
+        - Weaken or expire in the presence of the sacred or the pure
+        - Fall prey to tricks or traps a thinking being could avoid
+        - Have limitations its creator didn't anticipate

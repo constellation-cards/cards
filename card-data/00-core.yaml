@@ -20,13 +20,13 @@ templates:
         During play, you can speak from one of several agendas.
 
         These agendas can be assigned individually to several people,
-        or all given to a single player ("the Game Master" or "the GM").
+        or all given to a single player.
 
         The agendas can change hands during the game.
         You cannot take an agenda away from someone else,
         but you can ask someone else to give up an agenda.
 
-        If you've been assigned a agenda, you are bound to speak from it.
+        If you've been assigned an agenda, you are bound to speak from it.
 cards:
   - template: &principal
       <<: *agendafront
@@ -35,14 +35,11 @@ cards:
     front:
       <<: *principal
       description: >
-        You get to create and play a Principal Character (PC),
-        one of the protagonists of the story.
+        You create and play a Principal Character (PC).
 
-        Your job is to narrate your character's actions and reactions.
-        Decide on their agendas, then enact them in interesting ways.
-
-        When someone asks "what does your character do, say, or think?",
-        you get to answer.
+        You narrate your PC's actions, reactions,
+        and motivations.
+        You are the final authority on what your character says or does.
       prompts:
         - Stay true to your character
         - Share ways for other players to help you have fun
@@ -59,20 +56,15 @@ cards:
     front:
       <<: *facilitator
       description: >
-        Players in the spotlight are the focus of narration.
-        We're asking them for an action that pushes the scene forward,
-        and shining the spotlight until they make one.
-
-        Your job is to oversee moving the spotlight from player to player in fun and fair ways.
+        You push the scene forward by directing the spotlight of attention
+        from player to player in fun and fair ways.
 
         Move the spotlight:
       prompts:
-        - toward a PC who's placed at risk or in danger
+        - toward a PC who's at risk or in danger
         - toward a player who hasn't acted recently
-        - toward a player who has an interesting idea for how to move things forward
-        - away from a player who just resolved a dramatic or decisive action
-        - away from a cliffhanger or moment of tension
-        - away from any player who's had it too long
+        - toward a player who has an interesting idea
+        - away from a player who finished a cool action
     back:
       <<: *agendaback
       <<: *facilitator
@@ -83,15 +75,9 @@ cards:
     front:
       <<: *lorekeeper
       description: >
-        Your job is to establish the history, setting,
-        and canon of the world in which the game happens.
-
-        When someone asks, "what do our characters know about X?"
-        and it's not a question for an Ensemble Character (EC) to decide,
-        you get to answer.
-
-        Any player can suggest an answer, but you have the final say on what's true.
-        If a specific PC's heritage, origin, or interests concern the question, consider deferring to them.
+        You oversee the background details of the game world.
+        Defer to players whose PC's heritage, origin, or interests would supply answers
+        to background questions.
       prompts:
         - Who was the greatest Paladin in history?
         - What languages might my character learn to speak?
@@ -107,8 +93,8 @@ cards:
     front:
       <<: *referee
       description: >
-        Your job is to adjudicate questions about the rules of the game,
-        and to make changes to the rules with the group's consent.
+        You adjudicate questions about the rules of the game,
+        and make changes to the rules with the group's consent.
         Any player can suggest how to handle a rule, but you have the final say.
 
         Example rulings:
@@ -126,15 +112,10 @@ cards:
     front:
       <<: *storyteller
       description: >
-        The Principal Characters (PCs) are the focus of the game.
         The game also has Ensemble Characters (ECs),
         sometimes called Non-Player Characters (NPCs).
-
-        Your job is to narrate the ECs' actions and reactions.
-        Decide on their agendas, then enact them in interesting ways.
-
-        ECs are allies, antagonists, or anyone else involved
-        in the story but not at the heart of it.
+        You narrate their actions and reactions as
+        antagonists, allies, bystanders, and so on.
       prompts:
         - Give ECs a name and identity
         - Find the essential humanity of every EC
@@ -150,37 +131,28 @@ cards:
     front:
       <<: *challenges
       description: >
-        Any player may challenge a PC's action if failure is likely
-        and success or failure are both interesting for the story.
+        Any player may challenge a PC's action if
+        success or failure are both interesting.
 
-        When your PC is challenged,
-        you must generate a hit in order to succeed.
-        Other rules provide ways to generate hits.
+        When your PC is challenged, you must generate a hit to meet it,
+        like flipping a character card.
+        If you don't meet a challenge,
+        your PC's intentions are thwarted or complications arise.
 
-        If you fail to meet a challenge,
-        your PC's intentions are thwarted, or complications arise.
-        There's no challenge if this can't happen.
-      prompts:
-        - You're navigating rough terrain, and might fall or lose equipment
-        - You're fighting or fleeing a dangerous monster, and might get hurt
-        - You're working with complex magic or technology, and it might malfunction
-        - You're confronting an emotionally fraught situation where harm is possible
+        The challenge must suggest consequences for failure.
+        "Or else nothing happens" is not a challenge.
+        The same action cannot be challenged multiple times.
     back:
       <<: *challenges
       description: >
-        Challenges follow the principle of "say yes or roll the dice".
-
-        Use challenges to increase or decrease the difficulty of a situation.
-        For example, a risky combat scene might pose several challenges in succession.
+        Use challenges to tune the difficulty of a situation.
+        A risky combat scene might pose several challenges.
         A simple social encounter might pose only one challenge.
-
-        The player posing the challenge should give an idea of what failure looks like.
-        That player, or the Storyteller, might narrate the specifics of failure.
-
-        The same action should not be challenged multiple times
-        unless there are both distinct and interesting ways for it to fail.
-        For example, a demonstration of new magic might go awry by itself,
-        but might also anger a jealous wizard who observes it.
+      prompts:
+        - You're navigating rough terrain, and might fall or lose equipment
+        - You're fighting or fleeing a dangerous monster
+        - You're working with complex magic or technology that might malfunction
+        - You're confronting an emotionally fraught situation
   - front: &xcard
       <<: *template
       name: X-Card
@@ -193,6 +165,11 @@ cards:
         just lift this card up, or simply tap it. You don't have to explain why.
         It doesn't matter why.
         When we lift or tap this card, we simply edit out anything X-Carded."
+      rule: Flip for the remainder of the text
+    back:
+      <<: *xcard
+      description: >
+        Continue reading:
 
         "And if there is ever an issue,
         anyone can call for a break and we can talk privately.
@@ -201,7 +178,6 @@ cards:
         from all of you! Please help make this game fun for everyone.
         Thank you!"
       rule: Lay this card at the center of the play area
-    back: *xcard
   - template: &uncertain
       <<: *crisis
       name: Uncertain Crisis
@@ -238,7 +214,7 @@ cards:
         When you encounter such a crisis, decide what it would take to survive it,
         such as escaping an enemy or saving a friend.
       prompts:
-        - A furious and violent vehicle chase
+        - A furious and violent chase
         - Survival in a hostile and dangerous environment
         - An extended and grueling magical ritual
     back:
@@ -257,15 +233,14 @@ cards:
     front:
       <<: *overwhelming
       description: >
-        Some situations will upset a character's mental equilibrium,
-        or present a challenge so daunting that they aren't prepared to handle it immediately.
-        Ultimately, though, the characters may rally and prevail.
+        Some situations will wreck a character's plans and assumptions,
+        or be so daunting they have no idea how to handle it at first.
 
         When you encounter such a crisis, decide what it would take to survive it,
         such as defeating an enemy or finding shelter.
       prompts:
         - Final boss fights
-        - Sudden teleportation to a new world
+        - Being sent to a new world
         - Confrontation with divine forces
     back:
       <<: *overwhelming

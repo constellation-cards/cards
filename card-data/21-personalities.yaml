@@ -1,0 +1,198 @@
+stacks:
+  - name: City (Personality)
+templates:
+  - template: &personality-front
+      deck: CITY
+      stack: City (Personality)
+      rule: Flip to see the vulnerable version of this personality
+  - template: &personality-back
+      stack: City (Personality)
+      rule: Flip to see the dominant version of this personality
+cards:
+  - front: &Activist
+      <<: *personality-front
+      name: The Activist
+      description: >
+        The Activist longs for change and represents those who feel likewise.
+        They may use rhetoric, influence-peddling, money, or direct action to achieve their aims.
+        Whatever their goal, it now seems to be in reach.
+      prompts:
+        - What are the Activist's goals?
+        - Who do they represent? Who do they oppose?
+        - How far will they go? Have they gone?
+    back:
+      <<: *personality-back
+      name: The Activist
+      description: >
+        The Activist longs for change and represents those who feel likewise.
+        They may use rhetoric, influence-peddling, money, or direct action to achieve their aims.
+        Although driven, they are unsuccessful and desperate.
+      prompts:
+        - What are the Activist's goals?
+        - Who do they represent? Who do they oppose?
+        - How far will they go? Have they gone?
+  - front: &Factotum
+      <<: *personality-front
+      name: The Factotum
+      description: >
+        The Factotum is not a leader, but serves those who do.
+        They handle the complexities of day-to-day business.
+        They hold the keys to the doors of power, and may unlock them for the right querent.
+      prompts:
+        - Who do they serve? Why?
+        - Between the Factotum and their leader, who really rules?
+        - What does the Factotum personally want?
+    back:
+      <<: *personality-back
+      name: The Factotum
+      description: >
+        The Factotum is not a leader, but serves those who do.
+        They struggle with complexities of day-to-day business.
+        Their inexperience, their patron's incompetence,
+        or a heavy workload all weigh them down.
+      prompts:
+        - Who do they serve? Why?
+        - Between the Factotum and their leader, who really rules?
+        - What does the Factotum personally want?
+  - front: &Hardliner
+      <<: *personality-front
+      name: The Hardliner
+      description: >
+        The Hardliner upholds the de facto or de jure state of affairs.
+        They resist change, whether from hard experience, stubbornness,
+        or selfishness.
+        They are likely to prevail against uncoordinated efforts at reform.
+      prompts:
+        - What motivates the Hardliner to defend the status quo?
+        - How sincere are their stated objections to change?
+        - How have their beliefs changed over time?
+    back:
+      <<: *personality-back
+      name: The Hardliner
+      description: >
+        The Hardliner upholds the de facto or de jure state of affairs.
+        They resist change, whether from hard experience, stubbornness,
+        or selfishness.
+        With reform looking likely, they fight even harder to hold onto their diminishing status.
+      prompts:
+        - What motivates the Hardliner to defend the status quo?
+        - How sincere are their stated objections to change?
+        - How have their beliefs changed over time?
+  - front: &Mediator
+      <<: *personality-front
+      name: The Mediator
+      description: >
+        The Mediator tries to negotiate between competing factions or ideologies.
+        Doing so depends on good relations within each group.
+        Right now they're able to strike effective bargains,
+        achieving meaningful change rather than mere calm.
+      prompts:
+        - How does the Mediator achieve their ends?
+        - What sacrifices must they make?
+        - What is their real goal?
+    back:
+      <<: *personality-back
+      name: The Mediator
+      description: >
+        The Mediator tries to negotiate between competing factions or ideologies.
+        Doing so depends on good relations within each group.
+        Those relations may be threatened, the groups may refuse to budge,
+        or the Mediator has settled for a facade of peace rather than progress.
+      prompts:
+        - How does the Mediator achieve their ends?
+        - What sacrifices must they make?
+        - What is their real goal?
+  - front: &Newcomer
+      <<: *personality-front
+      name: The Newcomer
+      description: >
+        The Newcomer is unfamiliar with the city and their place in it.
+        They may be a new ruler, an important visitor, or the heir
+        to a fortune or legacy and now returning to inherit.
+        For now, those around them are helping them adjust.
+      prompts:
+        - What makes the Newcomer significant?
+        - What makes them stand out from how the city usually does things?
+        - Who has their ear? Who seeks it?
+    back:
+      <<: *personality-back
+      name: The Newcomer
+      description: >
+        The Newcomer is unfamiliar with the city and their place in it.
+        They may be a new ruler, an important visitor, or the heir
+        to a fortune or legacy and now returning to inherit.
+        Alas, those around them do not have their best interests at heart.
+      prompts:
+        - What makes the Newcomer significant?
+        - What makes them stand out from how the city usually does things?
+        - Who has their ear? Who seeks it?
+  - front: &Plotter
+      <<: *personality-front
+      name: The Plotter
+      description: >
+        The Plotter wishes to exploit conditions for some private goal.
+        They might be corrupt officials, influence-peddlers, or blackmailers.
+        Whether their goals are selfish or selfless, they seem likely to succeed.
+      prompts:
+        - What personal holds or secrets enable the Plotter's schemes?
+        - Who works with them? Why?
+        - What is their ultimate goal - profit, progress, or something else?
+    back:
+      <<: *personality-back
+      name: The Plotter
+      description: >
+        The Plotter wishes to exploit conditions for some private goal.
+        They might be corrupt officials, influence-peddlers, or blackmailers.
+        They are hunted, on the verge of exposure, using their remaining tools to survive.
+      prompts:
+        - What personal holds or secrets enable the Plotter's schemes?
+        - Who works with them? Why?
+        - What is their ultimate goal - profit, progress, or something else?
+  - front: &Scion
+      <<: *personality-front
+      name: The Scion
+      description: >
+        The Scion is the beneficiary of long city tradition.
+        They may come from noble stock or long-hoarded wealth,
+        hold an old and honored name, or hold significant land or relics.
+        They seem well-liked and happy in their position.
+      prompts:
+        - What is the Scion's place in the city and its history?
+        - What secrets does their legacy hold?
+        - How have they used their position?
+    back:
+      <<: *personality-back
+      name: The Scion
+      description: >
+        The Scion is the beneficiary of long city tradition.
+        The may come from once-honored aristocratic stock,
+        inherit ill-gotten gains, or live in the shadow of
+        whispered accusations and dark secrets about their bloodline.
+      prompts:
+        - What is the Scion's place in the city and its history?
+        - What secrets does their legacy hold?
+        - How have they used their position?
+  - front: &Turncoat
+      <<: *personality-front
+      name: The Turncoat
+      description: >
+        The Turncoat betrayed someone or something else,
+        and that betrayal will always hang over their head.
+        They have secured a place for themselves,
+        but those who know may still remember, and watch.
+      prompts:
+        - Who or what did they betray? On their own, or at the behest of others?
+        - Was it for the best? Did they think it was for the best?
+        - Do those betrayed still interact with the Turncoat?
+    back:
+      <<: *personality-back
+      name: The Turncoat
+      description: >
+        The Turncoat betrayed someone or something else,
+        and that betrayal will always hang over their head.
+        They now suffer for their transgression, however right or wrong it was,
+        and scheme or hope for a return to power.
+      prompts:
+        - Who or what did they betray? On their own, or at the behest of others?
+        - Was it for the best? Did they think it was for the best?
+        - Do those betrayed still interact with the Turncoat?

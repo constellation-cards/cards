@@ -6,3 +6,5 @@ card-data
 index.ts
 README.md
 tsconfig.json
+env_cards.tex
+sextant-client.ts

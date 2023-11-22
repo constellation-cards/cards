@@ -16,18 +16,15 @@ cards:
       name: Character Cards
       stack: Core Rules
       backgroundImage: character
+      rule: Other side is identical
       description: >
-        Cards with this icon are character cards.
-
-        To create a new PC, pick three cards from three different categories,
-        e.g. Focus, Role, and Origin.
+        To create a new PC, pick three cards: Focus, Role, and Origin.
         You can choose cards at random, or select them yourself.
 
-        These cards describe a PC's most important traits,
-        or the traits that you want to see in the spotlight during the game.
+        These cards describe the traits that you want to spotlight during the game.
         Just because someone else has the Courage card
         doesn't mean your character isn't courageous,
-        only that it's not going to be the quality we see most often or most plainly.
+        only that it's not going to be the quality you're focusing on.
       prompts:
         - "Front: get a hit by flipping the card"
         - "Back: flip when a prompt is narrated by anyone"

@@ -13,14 +13,13 @@ templates:
 
         The card will suggest ways in which the challenge was met.
         You can use one of these, or make up your own.
-
         If a card indicates that you missed,
         you may not try to meet the challenge in other ways.
 
-        A GM or other facilitator may adjust the ratio
+        You may adjust the ratio
         of hit or miss cards in this stack
         to reflect the difficulty of a given action.
-      rule: Draw a random card from this stack
+      rule: Draw a random card from this stack, flip to see the outcome
 cards:
   - front: *randomfront
     back: &hit

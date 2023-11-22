@@ -19,10 +19,8 @@ cards:
       description: >
         //"The clear skies, the lure of the open road, it's perfect!" -- Tana
 
-        You've lived your life among people from all over.
-        Maybe you lived in a bustling city, or maybe you
-        traveled the world.
-        You listened to their stories and saw their ways of living.
+        You've lived among people from all over.
+        Maybe you lived in a bustling city, or traveled the world.
 
         You've learned to approach situations by understanding many perspectives.
       prompts:
@@ -35,11 +33,8 @@ cards:
       description: >
         //"Do these wagon wheels fall off often?" -- Emory
 
-        It's possible to mistake your breadth of experience for depth,
+        You can mistake your breadth of experience for depth,
         and fail to hear wiser voices.
-        Similarly, you can make false assumptions about a culture
-        based on experience with a few of its individuals.
-        There's always more to learn. There's always a new perspective.
       prompts:
         - Overestimate your own wisdom or experience
         - Lose focus of people as individuals
@@ -53,8 +48,6 @@ cards:
         You grew up among farmers, trappers, city laborers,
         or other folk who made their way by the sweat of their brow.
         Others expected you to carry your own weight.
-        Life could be routine, and you learned ways
-        to pass the time.
 
         You've learned to approach situations with direct, hard work.
       prompts:
@@ -67,14 +60,13 @@ cards:
       description: >
         //"Smells like cow breakfast" -- Basler
 
-        Not everyone appreciates the necessity of hard work.
-        But sometimes, just plowing through isn't the right answer either.
-        You're used to getting down in the mud,
-        but it's important to reach for the stars as well.
+        Some situations demand inspiration, not perspiration.
+        Other times, the reality of repetitive work can lull you into boredom,
+        distraction, or despair.
       prompts:
-        - Work harder, not smarter
         - Sacrifice tomorrow's hopes for today's needs
-        - Lay a heavy burden on light shoulders
+        - Demand someone else live up to your work ethic
+        - Lose sight of something important
   - front: &Insular
       <<: *tfront
       name: Insular
@@ -83,10 +75,9 @@ cards:
 
         You grew up secluded from the rest of the world.
         Whether you lived on a lonely mountain village,
-        a religious retreat, or in an enclave within a
-        city, the ways of the outside world are a mystery.
-
-        You've learned to approach situations through curiosity.
+        a religious retreat, or a city enclave,
+        the ways of the outside world are a mystery
+        that must now be solved.
       prompts:
         - Solve a problem using your peoples' ways
         - Ask naive but insightful questions
@@ -97,29 +88,24 @@ cards:
       description: >
         //"Everything's different out here. That's why it's called a cloister" -- Basler
 
-        Your early life didn't prepare you for the sheer
+        Your early life didn't prepare you for the
         variey of people and things the world has to offer.
-        You might make a basic blunder, or ask a troubling question.
-        When in doubt, there might be someone you rely on for answers,
-        or you may rely on your upbringing's incomplete picture of things.
+        You might make a faux pas or ask an embarrassingly obvious question.
       prompts:
         - Violate unspoken rules or cultural taboos
         - Cause conflict through misunderstanding
-        - Fall back on a trusted authority
+        - Fall back on questionable assumptions
   - front: &Mercantile
       <<: *tfront
       name: Mercantile
       description: >
         //"Welcome to the Labri Market! You can find anything here." -- Basler
 
-        You grew up among those who made their living through trade.
-        This could be the busy markets of a city,
-        an oceanic trade route, or the corridors of power in an embassy or castle.
-        You understand that some people have wants or needs,
-        that others can satisfy them,
-        and the power that comes from mediating between the two.
+        You grew up among those who live via bargaining:
+        a city's markets, an ocean trade route,
+        or the corridors of power in an embassy or castle.
 
-        You've learned to approach situations through canny negotiation.
+        You've learned to approach situations through negotiation.
       prompts:
         - Make a deal or haggle over details
         - Navigate a complex or ambiguous situation
@@ -130,14 +116,15 @@ cards:
       description: >
         //"...For the right price." -- Basler
 
-        Not everything can be reduced to a simple transaction,
-        but some people can't see any other way.
-        It becomes easy to ignore pain and devalue life
-        when money or power becomes a cocoon against existence.
+        You know that some people have wants and needs,
+        that others can satisfy them,
+        and that power comes from mediating between the two.
+
+        It's easy to get addicted to that power.
       prompts:
         - Compromise a principle or ideal for expedience
-        - Overcomplicate a plan or solution
-        - Value people as commodities rather than individuals with thoughts and feelings
+        - Put a price on service
+        - Treat people as assets or commodities
   - front: &Solitary
       <<: *tfront
       name: Solitary
@@ -174,10 +161,9 @@ cards:
       description: >
         //"Knights should be glorious champions of honor!" -- Emory
 
-        You knew from a young age that there's a right and wrong way to do things.
+        There's a right and wrong way to do things. Right?
         You might be from a noble family where things are done just so,
-        or your parents might have lived in constant fear of something,
-        and their caution rubbed off on you.
+        or grew up cautious thanks to constant danger.
 
         You've learned to approach situations through protocol.
       prompts:
@@ -190,10 +176,8 @@ cards:
       description: >
         //"As opposed to ironclad thugs lording it over the peasants?" -- Basler
 
-        While committing to a way of life gives you strength
-        to press on, it can make people inflexible or stubborn.
-        Some will reject anything outside their experience,
-        while others will actively fight against it.
+        Committing to a way of life can help you push forward,
+        but make you inflexible and stubborn.
       prompts:
         - Refuse to adapt your code to new or difficult situations
         - See the world through a narrow lens
@@ -203,16 +187,15 @@ cards:
       name: Underclass
       description: >
         //"Nobody fights for people like us. So we fight for ourselves." -- Basler
-        
+
         You grew up among people who were neglected or rejected
-        by a surrounding society.
-        Your family or neighbors could have been criminals, migrants,
-        members of a disliked minority or species, or anything else.
+        by a surrounding society: criminals, migrants,
+        or members of a mistreated minority.
 
         You've learned to approach situations via pride.
       prompts:
         - Stand up for yourself and those like you
-        - Rally those who question themselves
+        - Rally the downtrodden
         - Obtain your needs through a social network
     back:
       <<: *tback
@@ -232,12 +215,11 @@ cards:
       name: Unfettered
       description: >
         //"As a princess, I had power. As a ranger, I have freedom." -- Woody
-        
-        Whether you were a scion of privilege,
-        a child wandering the halls of an artisan's guild,
-        or a free spirit roaming a mystic forest,
-        you were accustomed to going where you wished
-        and doing whatever seemed best.
+
+        Whether a scion of privilege,
+        the free-spirited offspring of tolerant parents,
+        or a feral child in a mystic forest,
+        you've always done what you saw fit.
 
         You've learned to approach situations through force of will.
       prompts:

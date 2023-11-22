@@ -19,12 +19,10 @@ cards:
       description: >
         //"It doesn't matter if I win. It matters if I don't try." -- Emory
 
-        Courage is strength in the face of grief or pain.
-        It's not just a willingness to do something,
-        but to do it when there's every reason to hold back.
+        Courage is strength in the face of grief, pain, and fear.
 
         Courage lets you fight when afraid, speak when being shouted down,
-        stand up when you're injured, or take an unpopular stand.
+        stand up when you're injured, or rebuke someone you respect.
       prompts:
         - Honor or pride must be upheld
         - Someone or something near you has already suffered harm
@@ -40,23 +38,18 @@ cards:
         when a battle really needs to be fought.
         And not everyone is prepared to fight every battle they face.
       prompts:
-        - Compromise a principle for safety or expedience
+        - Boast of deeds undone or make promises you can't fulfill
         - Run away to avoid getting hurt, physically or emotionally
-        - Seek glory or self-aggrandizement
+        - Seek glory or vengeance
   - front: &Charm
       <<: *tfront
       name: Charm
       description: >
         //"I only came here to see you!" -- Basler
-        
-        The essence of charm is creating a bond with someone.
-        Make them feel interesting, or appreciated,
-        or just part of something cool.
 
-        Charm lets you awe, wow, surprise, or comfort people.
-        It gets you through tough situations with style and panache,
-        making people move aside for you
-        or get behind you through force of personality.
+        Charm is about creating a bond with someone at will.
+        You can get through situations with style, panache,
+        or force of personality.
       prompts:
         - Perform with grace and elegance
         - Get by on audacity
@@ -81,17 +74,16 @@ cards:
       description: >
         //"My eye watches the target. My hand lets go the bowstring. I do nothing." -- Woody
 
-        You do things without thinking.
-        Your heart, your conscience, a divine command,
-        or something guides your actions.
+        Your heart, your conscience, a divine command, or something else
+        outweighs reason when you act.
 
         Instinct lets you act when everything says to hesitate,
-        or when uncertainty overwhelms you,
+        when uncertainty overwhelms you,
         or when speed counts more than reason.
       prompts:
-        - Take decisive action in the moment
+        - Take decisive action now
         - Get an immediate read on a person or situation
-        - Exploit a momentary opportunity
+        - Leap into an opportunity
     back:
       <<: *tback
       name: Instinct
@@ -125,12 +117,11 @@ cards:
         //"The Power is much like the ocean. You can sail in it, or drown in it." -- Tana
 
         When called, the Power always comes. That doesn't mean you can always command it.
-
-        The costs and consequences of using magic can be anything, even for a familiar spell.
+        Even familiar workings can have surprising consequences.
       prompts:
         - Face a cost you can't easily or immediately pay
         - Supply a rare material component or perform a ritual at specific place and time
-        - Fall prey to a side effect or curse
+        - Suffer a side effect or curse
   - front: &Secrets
       <<: *tfront
       name: Secrets
@@ -139,7 +130,6 @@ cards:
 
         You deal in concealment, stealth, and subterfuge.
         Your tools are things people don't want known, or weren't expecting.
-
         You could use hidden weapons, court gossip,
         cloak-and-dagger skulduggery, or the secrets of the heart.
       prompts:
@@ -163,19 +153,16 @@ cards:
       <<: *tfront
       name: Tech
       description: >
-        //"Y'see, this gizmo here can automatically pick any lock in the kingdom!" -- Basler
+        //"This gizmo can pick any lock in the kingdom!" -- Basler
 
         You focus on science, technology, or artifice to get things done.
-
-        This could include familiar inventions like handguns or balloons,
-        or magitek such as glowing crystal fire-rods,
-        or products of magic such as alchemical potions.
-
-        You can use, repair, or replace your toolkit of inventions.
+        This includes science like handguns or balloons,
+        magitek such as crystal fire-rods,
+        or alchemy such as healing potions.
       prompts:
         - Fight using advanced weapons or protective gear
         - Overcome obstacles by deploying a gadget
-        - Gain surprise or advantage against those unfamiliar with your tech
+        - Gain advantage against those unfamiliar with your tech
     back:
       <<: *tback
       name: Tech
@@ -197,8 +184,8 @@ cards:
         Through exercise, mindfulness, and practice,
         you've learned to use your own mind and body as a tool.
 
-        Training lets you fight, move, and act with grace, power, and precision.
-        You can push your own abilities past normal limits, or unlock new ones.
+        Training lets you act with grace, power, and precision,
+        or overcome mundane limits.
       prompts:
         - Use your body's abilities in place of weapons, armor, or equipment
         - Focus inner strength to resist torment or temptation
@@ -222,13 +209,10 @@ cards:
       description: >
         //"The world is full of opportunities!" -- Basler
 
-        Characters who live by their wits
-        take advantage of the things (and people) around them.
-        They turn difficulty into opportunity,
-        or find a new way to look at a situation.
-
-        Wits lets you find solutions within the problem you face,
-        create plans, and know when to abandon those plans.
+        Wits lets you make the most of everything around you.
+        You turn difficulty into opportunity,
+        find solutions within the problem you face,
+        and look at situations in new ways.
       prompts:
         - Find a way to turn strength to or from weakness
         - Devise a plan to deal with a problem
