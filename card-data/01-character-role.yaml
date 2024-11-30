@@ -1,5 +1,13 @@
 stacks:
   - name: Character (Role)
+    description: >
+      Role cards tell us what sort of story arcs surround your character.
+      For example, a Soldier's story will be about the role of violence,
+      while a Dreamer's story will be about the clash between their
+      idealism and the reality they face.
+
+      The flip side of a role card talks about the challenges and hazards
+      your character faces on their journey.
     icons:
       - star
       - user

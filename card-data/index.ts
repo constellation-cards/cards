@@ -30,20 +30,22 @@ interface YamlData {
 const deckTemplate: ConstellationCardDeck = {
   uid: "",
   name: "",
+  description: "",
   cards: [],
 };
 
 const stackTemplate: ConstellationCardStack = {
   uid: "",
   name: "",
+  description: "",
   icons: [],
   cards: [],
-  state: null,
 };
 
 const faceTemplate: ConstellationCardFace = {
   name: "",
   backgroundImage: null,
+  flavor: "",
   description: "",
   prompts: [],
   rule: "",
@@ -56,7 +58,6 @@ const cardTemplate: ConstellationCard = {
   front: { ...faceTemplate },
   back: { ...faceTemplate },
   quantity: 1,
-  state: null,
 };
 
 function idForObject(obj: any): string {

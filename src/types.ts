@@ -24,6 +24,11 @@ export interface ConstellationCardDeck {
   name: string;
 
   /**
+   * An explanation of the deck's contents and purpose
+   */
+  description: string;
+
+  /**
    * All the cards in this deck, by ID
    */
   cards: ConstellationCardUid<ConstellationCard>[];
@@ -46,6 +51,11 @@ export interface ConstellationCardStack<T = {} | null> {
   name: string;
 
   /**
+   * An explanation of the stack's contents and purpose
+   */
+  description: string;
+
+  /**
    * The list of icons associated with this stack
    */
   icons: ConstellationCardImage[];
@@ -54,12 +64,6 @@ export interface ConstellationCardStack<T = {} | null> {
    * All the cards in this stack, by ID
    */
   cards: ConstellationCardUid<ConstellationCard>[];
-
-  /**
-   * Constellation Card objects can have an optional state,
-   * to hold environment-specific data (e.g. whether a card is flipped)
-   */
-  state: T;
 }
 
 export interface ConstellationCardFace {
@@ -72,6 +76,11 @@ export interface ConstellationCardFace {
    * Cards can have a semi-transparent image as a background
    */
   backgroundImage: ConstellationCardImage;
+
+  /**
+   * Cards can optionally have flavor text, shown in italics at the top
+   */
+  flavor: string | undefined;
 
   /**
    * Cards can have descriptions
@@ -115,12 +124,6 @@ export interface ConstellationCard<T = {} | null> {
    * The stack has a certain number of this card in it
    */
   quantity: number;
-
-  /**
-   * Constellation Card objects can have an optional state,
-   * to hold environment-specific data (e.g. whether a card is flipped)
-   */
-  state: T;
 }
 
 /**
@@ -129,7 +132,7 @@ export interface ConstellationCard<T = {} | null> {
 export enum ConstellationCardPresetFlipRule {
   FRONT = "front",
   BACK = "back",
-  RANDOM = "random"
+  RANDOM = "random",
 }
 
 /**

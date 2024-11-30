@@ -1,5 +1,13 @@
 stacks:
   - name: Character (Upbringing)
+    description: >
+      Upbringing cards talk about a character's backstory, but don't stop there.
+      They describe how characters have learned to interact with other people,
+      and how they see the world.
+
+      The flip side of an Upbringing card is about the limitations of these visions.
+      A character's prejudices, assumptions, and social shortcomings can come from
+      their upbringing as well.
     icons:
       - star
       - home

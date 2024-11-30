@@ -1,5 +1,9 @@
 stacks:
   - name: Condition
+    description: >
+      Condition cards let characters succeed at a cost.
+      Rather than flipping a character card to succeed on merits or talent,
+      you take on a drawback or complication that will affect your future actions.
     icons:
       - heart
 templates:

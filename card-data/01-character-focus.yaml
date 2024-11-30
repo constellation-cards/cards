@@ -1,5 +1,13 @@
 stacks:
   - name: Character (Focus)
+    description: >
+      Focus cards tell us how your character gets things done in a story.
+      A character like Han Solo has "Charm" as a focus,
+      while Princess Leia has "Courage" and Luke Skywalker has "Instinct".
+
+      The flip side of a focus is how its use can go wrong for a character.
+      Courage can become recklessness. Technology can fail.
+      Magic can exact a price. And so on.
     icons:
       - star
       - key

@@ -1,9 +1,30 @@
 decks:
   - name: CORE
+  - description: >
+      The CORE deck contains all the "core rules" of the game:
+      player agendas, character cards, conditions, and random oracles.
+
+      This deck alone doesn't have specific flavor,
+      but it can be used to build any game you want to play.
 stacks:
   - name: Core Rules
+    description: >
+      Core Rules are cards that tell you how to play the game.
   - name: Core Rules (Agenda)
+    description: >
+      Agenda cards tell players what they should do during the game.
+      You should have at least one agenda card during play.
+
+      If you aren't sure what other agenda you should have,
+      the Principal is probably what you want.
   - name: Core Rules (Crisis)
+    description: >
+      You can use crisis cards at different moments of the game
+      to change the urgency or tension of a scene.
+
+      Introducing a crisis card changes the rules of card draws and flips
+      in special situations.
+      The crisis card is discarded once the scene ends.
 presets:
   - name: New Empty Spread
     description: Create a new empty spread
