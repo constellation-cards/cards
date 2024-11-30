@@ -28,9 +28,9 @@ cards:
   - front: &Armored
       <<: *tfront
       name: Armored
+      flavor: >
+        "My daggers bounced off that plate mail! What now?" -- Basler
       description: >
-        //"My daggers bounced off that plate mail! What now?" -- Basler
-
         This encounter includes something important that is heavily defended.
         This could mean body armor of leather or metal,
         hardened barriers of stone, or wood,
@@ -43,9 +43,9 @@ cards:
     back:
       <<: *tback
       name: Armored
+      flavor: >
+        "You know what metal does? Heats up. Fireball!" -- Tana
       description: >
-        //"You know what metal does? Heats up. Fireball!" -- Tana
-
         Every armor has a weakness or comes at a cost,
         like making someone slower or something heavier.
         Not every armor's weakness is obvious, and finding it may be difficult.
@@ -56,9 +56,9 @@ cards:
   - front: &Base
       <<: *tfront
       name: Base
+      flavor: >
+        "That's a big castle..." -- Basler
       description: >
-        //"That's a big castle..." -- Basler
-
         A Base can be a temporary encampment, an outpost,
         a secret headquarters, a wild animal's den, or some other protected space.
         You might need to find something specific,
@@ -70,9 +70,9 @@ cards:
     back:
       <<: *tback
       name: Base
+      flavor: >
+        "The tyrant king doesn't know about these secret tunnels" -- Emory
       description: >
-        //"The tyrant king doesn't know about these secret tunnels" -- Emory
-
         While Bases can be big and imposing,
         their nature can work against their occupants.
         The bigger the Base, the more likely it is to hold something helpful.
@@ -83,9 +83,9 @@ cards:
   - front: &Diabolical
       <<: *tfront
       name: Diabolical
+      flavor: >
+        "Back, foul fiend! Light will overcome you!" -- Emory
       description: >
-        //"Back, foul fiend! Light will overcome you!" -- Emory
-
         A Diabolical encounter has the touch of evil.
         An actual summoned demon, a possessed victim,
         or a dark and malevolent force are all Diabolic.
@@ -96,9 +96,9 @@ cards:
     back:
       <<: *tback
       name: Diabolical
+      flavor: >
+        "Basler, stop cringing. He's not talking about you." -- Woody
       description: >
-        //"Basler, stop cringing. He's not talking about you." -- Woody
-
         Evil hasn't won, though it keeps trying.
         Powers from beyond are bound by their own rules too,
         and can be defeated accordingly.
@@ -113,9 +113,9 @@ cards:
   - front: &Elemental
       <<: *tfront
       name: Elemental
+      flavor: >
+        "Earth sprites. They have the ore we seek." -- Tana
       description: >
-        //"Earth sprites. They have the ore we seek." -- Tana
-
         Powerful forces of nature such as volcanoes, storms,
         as well as elemental entities.
       prompts:
@@ -126,9 +126,9 @@ cards:
     back:
       <<: *tback
       name: Elemental
+      flavor: >
+        "They had some nice gemstones too!" -- Basler
       description: >
-        //"They had some nice gemstones too!" -- Basler
-
         Each element has rules. Water flows.
         Fire burns, but not without fuel.
         Some elements can counteract others.
@@ -139,9 +139,9 @@ cards:
   - front: &Flying
       <<: *tfront
       name: Flying
+      flavor: >
+        "Did something just swoop overhead?" -- Emory
       description: >
-        //"Did something just swoop overhead?" -- Emory
-
         This encounter includes something flying or airborne.
         Winged creatures, skilled magicians, and floating platforms
         can ignore earthbound attackers and require effort to reach.
@@ -152,9 +152,9 @@ cards:
     back:
       <<: *tback
       name: Flying
+      flavor: >
+        "Meet my best girl, Annette! A net, get it?" -- Basler
       description: >
-        //"Meet my best girl, Annette! A net, get it?" -- Basler
-
         Wings require energy to sustain flight and can be fragile.
         Magical flight can be counter-spelled.
         Turbulent air or nets can force flyers down.
@@ -165,9 +165,9 @@ cards:
   - front: &Gang
       <<: *tfront
       name: Gang
+      flavor: >
+        "They outnumber us 5 to 1, folks!" -- Basler
       description: >
-        //"They outnumber us 5 to 1, folks!" -- Basler
-
         A group of beings bound together in common purpose.
         Gangs can be organized, like criminal gangs or military units,
         or informal groups like angry mobs or animal packs.
@@ -178,9 +178,9 @@ cards:
     back:
       <<: *tback
       name: Gang
+      flavor: >
+        "Sounds like fair odds to me. Have at you!" -- Emory
       description: >
-        //"Sounds like fair odds to me. Have at you!" -- Emory
-
         The strength of a gang is in its numbers.
         Without a strong leader, the gang obeys its collective impulses.
         Individual members can be isolated and confronted.
@@ -191,9 +191,9 @@ cards:
   - front: &Hybrid
       <<: *tfront
       name: Hybrid
+      flavor: >
+        "A Gryphon. The heraldic symbol of my kingdom. Majestic!" -- Emory
       description: >
-        //"A Gryphon. The heraldic symbol of my kingdom. Majestic!" -- Emory
-
         A Hybrid being is made up of two or more things, not always living.
         Such beings can be part-human (mermaids, harpies),
         mixed animal (cockatrices, pegasi),
@@ -204,9 +204,9 @@ cards:
     back:
       <<: *tback
       name: Hybrid
+      flavor: >
+        "That thing was terrifying! Your kingdom is messed up!" -- Basler
       description: >
-        //"That thing was terrifying! Your kingdom is messed up!" -- Basler
-
         Not every hybrid has a perfect command of its own nature.
         Hybrids must also obey the rules of all their component parts.
       prompts:
@@ -215,9 +215,9 @@ cards:
   - front: &Large
       <<: *tfront
       name: Large
+      flavor: >
+        "The bigger they are, the harder they fall!" -- Tana
       description: >
-        //"The bigger they are, the harder they fall!" -- Tana
-
         This encounter includes something of enormous size.
         It might be naturally large, like a dragon or a giant,
         or have been enlarged by magic or other forces.
@@ -228,9 +228,9 @@ cards:
     back:
       <<: *tback
       name: Large
+      flavor: >
+        "Just as long as it doesn't fall on us." -- Basler
       description: >
-        //"Just as long as it doesn't fall on us." -- Basler
-
         You may have trouble engaging with a Large encounter
         due to the size difference, but that trouble goes both ways.
         It can be hard for Large things to perceive or target smaller
@@ -242,9 +242,9 @@ cards:
   - front: &Monstrous
       <<: *tfront
       name: Monstrous
+      flavor: >
+        "That ain't no ordinary wolf, folks.." -- Basler
       description: >
-        //"That ain't no ordinary wolf, folks.." -- Basler
-
         Monstrous threats are altered forms of the familiar.
         They are fiercer, more feral, or disturbingly unnatural,
         the nightmarishly distorted vision of the original.
@@ -255,9 +255,9 @@ cards:
     back:
       <<: *tback
       name: Monstrous
+      flavor: >
+        "Whoever corrupted this creature will pay. Let's find them." -- Woody
       description: >
-        //"Whoever corrupted this creature will pay. Let's find them." -- Woody
-
         A Monstrous threat is powered by its rage or aggression, but
         often lack a sense of self-preservation,
         fighting relentlessly when others would retreat.
@@ -268,9 +268,9 @@ cards:
   - front: &Notorious
       <<: *tfront
       name: Notorious
+      flavor: >
+        "That's Gretamaw, the Beaked Butcher!" -- Basler
       description: >
-        //"That's Gretamaw, the Beaked Butcher!" -- Basler
-
         A monster whispered of by fearful villagers. A lonely place of power.
         An artifact of legend, replete with arcane power.
         A person sung of by the bards.
@@ -282,9 +282,9 @@ cards:
     back:
       <<: *tback
       name: Notorious
+      flavor: >
+        "Save the beak. We need it to claim the reward!" -- Basler
       description: >
-        //"Save the beak. We need it to claim the reward!" -- Basler
-
         The stories about this encounter might give you
         clues on how to deal with it. But stories are just that, stories.
         You might correctly leverage its lore,
@@ -296,9 +296,9 @@ cards:
   - front: &Portentous
       <<: *tfront
       name: Portentous
+      flavor: >
+        "Where are all those crows going?" -- Tana
       description: >
-        //"Where are all those crows going?" -- Tana
-
         This encounter foreshadows something important.
         It can be a mystical experience, laden with dreams and prophecy,
         or just a mundane glimpse into a momentous reality beyond.
@@ -309,9 +309,9 @@ cards:
     back:
       <<: *tback
       name: Portentous
+      flavor: >
+        "They're going the same way we are. Come on." -- Woody
       description: >
-        //"They're going the same way we are. Come on." -- Woody
-
         The Portentous is the first step on a larger road.
         It both surprises characters, and prepares them for what is next.
         If the future cannot be changed, it can be met with eyes open.
@@ -322,9 +322,9 @@ cards:
   - front: &Spectral
       <<: *tfront
       name: Spectral
+      flavor: >
+        "My arrows go right through it." -- Woody
       description: >
-        //"My arrows go right through it." -- Woody
-
         This encounter includes something ghostly or purely spiritual.
         Spectral entities might have obligations or passions
         binding them to the mortal world.
@@ -337,9 +337,9 @@ cards:
     back:
       <<: *tback
       name: Spectral
+      flavor: >
+        "I'll have a magic circle up in a moment!" -- Tana
       description: >
-        //"I'll have a magic circle up in a moment!" -- Tana
-
         Spectral beings are only visitors in the waking world.
         Their anchors are tenuous,
         and they may leave if given what they want
@@ -350,9 +350,9 @@ cards:
   - front: &Tense
       <<: *tfront
       name: Tense
+      flavor: >
+        "Deep breaths. Stay calm. Show them we're friends." -- Tana
       description: >
-        //"Deep breaths. Stay calm. Show them we're friends." -- Tana
-
         The encounter includes a highly charged situation.
         One or more parties might be on edge,
         ready for confrontation with another.
@@ -364,9 +364,9 @@ cards:
     back:
       <<: *tback
       name: Tense
+      flavor: >
+        "You mean the real villain all this time was...?!" -- Emory
       description: >
-        //"You mean the real villain all this time was...?!" -- Emory
-
         If you discover the reason for a Tense situation, you
         can find a ways to defuse it.
         You can talk others down if you aren't caught up in the situation yourself.
@@ -377,9 +377,9 @@ cards:
   - front: &Toxic
       <<: *tfront
       name: Toxic
+      flavor: >
+        "Don't let it touch you! Your skin will rot away!" -- Woody
       description: >
-        //"Don't let it touch you! Your skin will rot away!" -- Woody
-
         Venomous creatures, assassins with poisoned blades, 
         swamp gasses, and many other things can afflict you
         with sickness. Poisons can be fast acting and deadly, or
@@ -391,9 +391,9 @@ cards:
     back:
       <<: *tback
       name: Toxic
+      flavor: >
+        "My arrows can fly farther than its spit." -- Woody
       description: >
-        //"My arrows can fly farther than its spit." -- Woody
-
         Some toxins have antidotes, or may not penetrate some
         kinds of defense.
         For example, a snake's fangs might be deflected by armor.
@@ -404,9 +404,9 @@ cards:
   - front: &Undead
       <<: *tfront
       name: Undead
+      flavor: >
+        "This unholy abomination will fall!" -- Emory
       description: >
-        //"This unholy abomination will fall!" -- Emory
-
         Necromancy, curses, or strange phenomena
         can bring a deceased creature back to a false life.
         The being is sustained by magic, not biology.
@@ -418,9 +418,9 @@ cards:
     back:
       <<: *tback
       name: Undead
+      flavor: >
+        "Not so much fell as fell apart..." -- Basler
       description: >
-        //"Not so much fell as fell apart..." -- Basler
-
         Being sustained by dark magic, the undead are equally vulnerable to it.
         Many cannot abide holy objects, places, or effects.
         Others are bound by orders to only guard a certain place,

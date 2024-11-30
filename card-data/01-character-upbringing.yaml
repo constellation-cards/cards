@@ -24,9 +24,9 @@ cards:
   - front: &Cosmopolitan
       <<: *tfront
       name: Cosmopolitan
+      flavor: >
+        "The clear skies, the lure of the open road, it's perfect!" -- Tana
       description: >
-        //"The clear skies, the lure of the open road, it's perfect!" -- Tana
-
         You've lived among people from all over.
         Maybe you lived in a bustling city, or traveled the world.
 
@@ -38,9 +38,9 @@ cards:
     back:
       <<: *tback
       name: Cosmopolitan
+      flavor: >
+        "Do these wagon wheels fall off often?" -- Emory
       description: >
-        //"Do these wagon wheels fall off often?" -- Emory
-
         You can mistake your breadth of experience for depth,
         and fail to hear wiser voices.
       prompts:
@@ -50,9 +50,9 @@ cards:
   - front: &Industrious
       <<: *tfront
       name: Industrious
+      flavor: >
+        "Take a deep breath of that farm air!" -- Tana
       description: >
-        //"Take a deep breath of that farm air!" -- Tana
-
         You grew up among farmers, trappers, city laborers,
         or other folk who made their way by the sweat of their brow.
         Others expected you to carry your own weight.
@@ -65,9 +65,9 @@ cards:
     back:
       <<: *tback
       name: Industrious
+      flavor: >
+        "Smells like cow breakfast" -- Basler
       description: >
-        //"Smells like cow breakfast" -- Basler
-
         Some situations demand inspiration, not perspiration.
         Other times, the reality of repetitive work can lull you into boredom,
         distraction, or despair.
@@ -78,9 +78,9 @@ cards:
   - front: &Insular
       <<: *tfront
       name: Insular
+      flavor: >
+        "This is all very different from the cloister" -- Emory
       description: >
-        //"This is all very different from the cloister" -- Emory
-
         You grew up secluded from the rest of the world.
         Whether you lived on a lonely mountain village,
         a religious retreat, or a city enclave,
@@ -93,9 +93,9 @@ cards:
     back:
       <<: *tback
       name: Insular
+      flavor: >
+        "Everything's different out here. That's why it's called a cloister" -- Basler
       description: >
-        //"Everything's different out here. That's why it's called a cloister" -- Basler
-
         Your early life didn't prepare you for the
         variey of people and things the world has to offer.
         You might make a faux pas or ask an embarrassingly obvious question.
@@ -106,9 +106,9 @@ cards:
   - front: &Mercantile
       <<: *tfront
       name: Mercantile
+      flavor: >
+        "Welcome to the Labri Market! You can find anything here." -- Basler
       description: >
-        //"Welcome to the Labri Market! You can find anything here." -- Basler
-
         You grew up among those who live via bargaining:
         a city's markets, an ocean trade route,
         or the corridors of power in an embassy or castle.
@@ -121,9 +121,9 @@ cards:
     back:
       <<: *tback
       name: Mercantile
+      flavor: >
+        "...For the right price." -- Basler
       description: >
-        //"...For the right price." -- Basler
-
         You know that some people have wants and needs,
         that others can satisfy them,
         and that power comes from mediating between the two.
@@ -136,9 +136,9 @@ cards:
   - front: &Solitary
       <<: *tfront
       name: Solitary
+      flavor: >
+        "I got this, leave me alone" -- Woody
       description: >
-        //"I got this, leave me alone" -- Woody
-
         For much of your life, you've been on your own.
         You might have been orphaned or abandoned or kidnapped.
         You might have run away from home,
@@ -152,9 +152,9 @@ cards:
     back:
       <<: *tback
       name: Solitary
+      flavor: >
+        "You've left yourself alone too long" -- Tana
       description: >
-        //"You've left yourself alone too long" -- Tana
-
         Without experiencing what other people in your life
         can do, you may fear what you need most from them:
         an outlet.
@@ -166,9 +166,9 @@ cards:
   - front: &Strict
       <<: *tfront
       name: Strict
+      flavor: >
+        "Knights should be glorious champions of honor!" -- Emory
       description: >
-        //"Knights should be glorious champions of honor!" -- Emory
-
         There's a right and wrong way to do things. Right?
         You might be from a noble family where things are done just so,
         or grew up cautious thanks to constant danger.
@@ -181,9 +181,9 @@ cards:
     back:
       <<: *tback
       name: Strict
+      flavor: >
+        "As opposed to ironclad thugs lording it over the peasants?" -- Basler
       description: >
-        //"As opposed to ironclad thugs lording it over the peasants?" -- Basler
-
         Committing to a way of life can help you push forward,
         but make you inflexible and stubborn.
       prompts:
@@ -193,9 +193,9 @@ cards:
   - front: &Underclass
       <<: *tfront
       name: Underclass
+      flavor: >
+        "Nobody fights for people like us. So we fight for ourselves." -- Basler
       description: >
-        //"Nobody fights for people like us. So we fight for ourselves." -- Basler
-
         You grew up among people who were neglected or rejected
         by a surrounding society: criminals, migrants,
         or members of a mistreated minority.
@@ -208,9 +208,9 @@ cards:
     back:
       <<: *tback
       name: Underclass
+      flavor: >
+        "When everyone hates you, it's hard not to hate them back." -- Basler
       description: >
-        //"When everyone hates you, it's hard not to hate them back." -- Basler
-
         Sometimes, circumstances push people to a breaking point.
         Other times, doing the right thing becomes impossible,
         and you're left with doing the necessary thing.
@@ -221,9 +221,9 @@ cards:
   - front: &Unfettered
       <<: *tfront
       name: Unfettered
+      flavor: >
+        "As a princess, I had power. As a ranger, I have freedom." -- Woody
       description: >
-        //"As a princess, I had power. As a ranger, I have freedom." -- Woody
-
         Whether a scion of privilege,
         the free-spirited offspring of tolerant parents,
         or a feral child in a mystic forest,
@@ -237,9 +237,9 @@ cards:
     back:
       <<: *tback
       name: Unfettered
+      flavor: >
+        "Those who go their own way often find the path lonely." -- Emory
       description: >
-        //"Those who go their own way often find the path lonely." -- Emory
-
         Rules aren't always made to be broken.
         You can offend others, or even hurt them or yourself
         when you go where you don't belong
