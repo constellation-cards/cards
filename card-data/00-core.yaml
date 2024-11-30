@@ -1,6 +1,6 @@
 decks:
   - name: CORE
-  - description: >
+    description: >
       The CORE deck contains all the "core rules" of the game:
       player agendas, character cards, conditions, and random oracles.
 
