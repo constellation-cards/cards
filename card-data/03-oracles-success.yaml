@@ -1,5 +1,11 @@
 stacks:
   - name: Success Oracle
+    description: >
+      A Success Oracle gives you a success-or-fail
+      outcome by drawing a random card.
+      In a standard deck, there's an equal number of success and failure cards.
+      You can tune the chances of success or failure by combining the cards
+      in different proportions.
     icons:
       - help-circle
       - shuffle

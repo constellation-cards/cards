@@ -1,7 +1,15 @@
 decks:
   - name: CITY
+    description: >
+      The City deck contains cards for creating a city full of excitement and adventure.
+      Cities are defined as neighborhoods connected by power dynamics,
+      and represented by strong personalities.
 stacks:
   - name: City (Dynamic)
+    description: >
+      A Dynamic is a relationship between two neighborhoods in a city.
+      Dynamics are either stable - unlikely to change - or unstable -
+      constantly in flux, always in danger of collapsing or mutating.
 presets:
   - name: New City
     description: Create a new city

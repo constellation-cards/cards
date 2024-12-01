@@ -1,5 +1,9 @@
 stacks:
   - name: City (Neighborhood)
+    description: >
+      A Neighborhood is a well defined subset of the city,
+      where certain people or activities are drawn to each other.
+      Neighborhoods are either flourishing or struggling.
 templates:
   - template: &neighborhood-front
       deck: CITY

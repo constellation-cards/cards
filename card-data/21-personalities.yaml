@@ -1,5 +1,9 @@
 stacks:
   - name: City (Personality)
+    description: >
+      A Personality is the face for a neighborhood or a social dynamic
+      between neighborhoods.
+      Personalities can be individuals, or perhaps small groups of like-minded individuals.
 templates:
   - template: &personality-front
       deck: CITY

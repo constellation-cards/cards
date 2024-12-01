@@ -1,7 +1,17 @@
 decks:
   - name: ENCOUNTER
+    description: >
+      The Encounter deck is for building confrontations with challenging creatures
+      or situations. By dealing two random Encounter cards and an Emotion card,
+      you create a unique challenge.
+
+      Cards in this deck tend to be flavored for a fantasy adventure game.
+      However, you can make cards tailored for any other setting.
 stacks:
   - name: Encounter
+    description: >
+      An Encounter card describes the qualities of a creature or
+      situation the players must confront.
     icons:
       - alert-circle
 presets:

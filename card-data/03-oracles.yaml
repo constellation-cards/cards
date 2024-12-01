@@ -1,5 +1,14 @@
 stacks:
   - name: Emotion Oracle
+    description: >
+      An Emotion Oracle lets you pick one of the fundamental human emotions
+      by drawing a card.
+      Emotion Oracles don't work alone. Instead, they can flavor other things.
+      Combine an Emotion with Encounter cards to suggest a dominant feeling
+      the encounter should have.
+      Combine an Emotion with a random Character card to create a personality,
+      or an attitude toward that thing (for example, "Rage" and "Magic" together
+      can represent someone angry at sorcery, or sorcerers).
     icons:
       - help-circle
 templates:
@@ -9,9 +18,9 @@ templates:
       stack: Emotion Oracle
       description: >
         Oracle cards can answer questions. Draw one card for a simple answer, or two cards for a complex one.
-        
+
         Use these cards to answer what someone is feeling, or what emotion a thing or event would spark.
-        
+
         Each emotion has two neighbors. You can use the emotion itself, or choose to mix it with a neighbor.
       rule: Flip to reveal an answer
   - template: &emotion-revealed
@@ -27,9 +36,9 @@ cards:
       name: Ecstacy
       description: >
         Ecstacy, Joy, or Serenity.
-        
+
         With Vigilance: yields Optimism.
-        
+
         With Admiration: yields Love.
   - front: *emotion-hidden
     back:
@@ -37,9 +46,9 @@ cards:
       name: Admiration
       description: >
         Admiration, Trust, or Acceptance.
-        
+
         With Ecstacy: yields Love.
-        
+
         With Terror: yields Submission.
   - front: *emotion-hidden
     back:
@@ -47,9 +56,9 @@ cards:
       name: Terror
       description: >
         Terror, Fear, or Apprehension.
-        
+
         With Admiration: yields Submission.
-        
+
         With Amazement: yields Awe.
   - front: *emotion-hidden
     back:
@@ -57,9 +66,9 @@ cards:
       name: Amazement
       description: >
         Amazement, Surprise, or Distraction.
-        
+
         With Terror: yields Awe.
-        
+
         With Grief: yields Disapproval.
   - front: *emotion-hidden
     back:
@@ -67,9 +76,9 @@ cards:
       name: Grief
       description: >
         Grief, Sadness, or Pensiveness.
-        
+
         With Amazement: yields Disapproval.
-        
+
         With Loathing: yields Remorse.
   - front: *emotion-hidden
     back:
@@ -77,9 +86,9 @@ cards:
       name: Loathing
       description: >
         Loathing, Disgust, or Boredom.
-        
+
         With Grief: yields Remorse.
-        
+
         With Rage: yields Contempt.
   - front: *emotion-hidden
     back:
@@ -87,9 +96,9 @@ cards:
       name: Rage
       description: >
         Rage, Anger, or Annoyance.
-        
+
         With Loathing: yields Contempt.
-        
+
         With Vigilance: yields Aggressiveness.
   - front: *emotion-hidden
     back:
@@ -97,7 +106,7 @@ cards:
       name: Vigilance
       description: >
         Vigilance, Anticipation, or Interest.
-        
+
         With Rage: yields Aggressiveness.
-        
+
         With Ecstacy: yields Optimism.
