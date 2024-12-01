@@ -1,3 +1,9 @@
+## 2.0.2 (2024-11-30)
+
+### Fix
+
+- Clean up npm package environment
+
 ## 2.0.1 (2024-11-29)
 
 ### Fix
