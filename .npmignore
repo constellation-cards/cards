@@ -1,10 +1,12 @@
 # Dependency directory
 node_modules
 
+# Source files
 card-data
-/cards.json
-index.ts
+
 README.md
+index.ts
+jest.config.d.ts
+jest.config.js
+jest.config.ts
 tsconfig.json
-env_cards.tex
-sextant-client.ts

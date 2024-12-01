@@ -91,6 +91,7 @@
     "card-data",
     "dist",
     "node_modules",
-    "test"
+    "test",
+    "jest.config.ts"
   ]
 }
