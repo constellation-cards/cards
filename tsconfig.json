@@ -90,6 +90,7 @@
   "exclude": [
     "card-data",
     "dist",
-    "node_modules"
+    "node_modules",
+    "test"
   ]
 }
